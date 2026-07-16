@@ -55,7 +55,43 @@ Until those embeds are connected, the site uses `support@silaramarketing.com.au`
 | `/who-we-help` | Australian care-provider audience overview |
 | `/book-demo` | Call-scheduling and Wufoo-ready lead stage |
 | `/contact` | Contact-focused lead stage |
+| `/privacy` | Comprehensive B2B Privacy Policy covering website, lead, account and approved product information |
+| `/terms` | Comprehensive B2B Terms of Service covering the portfolio and product-specific responsible-use boundaries |
+
+## B2B legal-document framework
+
+The website now includes a long-form **B2B Privacy Policy** and **B2B Terms of Service** drafted for Australian business customers and authorised users. The documents cover APGP, IncidentIQ, NoteGuard, CredsVault and ProviderPulse, while preserving the distinction between Silara's technology or marketing role and each care provider's responsibility for participant authority, service suitability, immediate safety, statutory reporting, clinical or professional judgement, worker verification, records, safeguarding and final decisions.
+
+The drafting is structured around the Australian Privacy Principles, OAIC health-privacy and data-breach guidance, ACCC guidance on standard-form contracts and unfair terms, ACMA electronic-marketing rules, NDIS Commission incident-management guidance, and the current aged-care Quality Standards and protected-information framework.[1] [2] [3] [4] [5] [6] It preserves non-excludable Australian Consumer Law rights and avoids stating that use of a Silara product guarantees legal or regulatory compliance.
+
+The legal pages are integrated into the footer, call-scheduling stage and every product's future Wufoo quiz stage. The form notices instruct prospects not to submit participant, resident, patient, incident, clinical, worker-screening or other sensitive care information through a general marketing form.
+
+> **Publication status:** These documents are a professional drafting baseline, not legal advice or a representation that Silara is compliant with every applicable law. They must be reviewed by an Australian commercial and privacy lawyer after the fields below are confirmed and before they are accepted by customers or published as final terms.
+
+| Required confirmation | Where it appears |
+| --- | --- |
+| Contracting legal entity, ABN, business address and telephone | Privacy Policy and Terms contact and party clauses |
+| Governing Australian state or territory and mediation city | Terms dispute and governing-law clauses |
+| Invoice period, renewal notice, month-to-month notice and refund settings | Terms commercial clauses |
+| Liability cap, insurance position and any service-level commitments | Terms risk and Order Form framework |
+| Production status and launch commitments for each unreleased product | Terms service-availability table and product schedules |
+| Hosting countries or regions and current subprocessors | Privacy Policy overseas-disclosure section |
+| Retention periods for enquiries, accounts, support, billing, product data, backups and security logs | Privacy Policy retention section |
+| Privacy-complaint acknowledgement and response targets | Privacy Policy complaints section |
+| Data-export window after termination | Terms exit-assistance section |
+| Wufoo, scheduler, analytics and CRM suppliers actually used at launch | Privacy Policy third-party forms and service-provider sections |
+
+For production customer contracting, the website Terms should be supplemented by an **Order Form** and, where relevant, a product schedule, privacy or data-processing schedule, security schedule, service-level schedule and APGP-specific provider or referral agreement. Any commercial terms supplied later should remain balanced and transparent, particularly where customers may fall within the Australian Consumer Law's small-business unfair-contract-term protections.[2]
 
 ## Pre-publication actions
 
 Before publication, add the final telephone number and office location, provide the live Wufoo or scheduling embed URLs, confirm the desired LinkedIn destination, and complete legal review of the privacy, terms, cookie, security, and product responsible-use copy. Unreleased products are intentionally described as **in development** or **early access**, and the site does not claim regulatory approval, guaranteed compliance, customer outcomes, or security certifications that have not been verified.
+
+## Legal references
+
+[1]: https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference "OAIC — Australian Privacy Principles quick reference"
+[2]: https://www.accc.gov.au/business/selling-products-and-services/contracts "ACCC — Contracts and unfair contract terms"
+[3]: https://www.acma.gov.au/avoid-sending-spam "ACMA — Avoid sending spam"
+[4]: https://www.ndiscommission.gov.au/rules-and-standards/reportable-incidents-and-incident-management/incident-management "NDIS Quality and Safeguards Commission — Incident management"
+[5]: https://www.agedcarequality.gov.au/providers/quality-standards "Aged Care Quality and Safety Commission — Quality Standards"
+[6]: https://www.health.gov.au/resources/publications/guide-to-aged-care-law/chapter-7-information-management?language=en "Australian Government Department of Health, Disability and Ageing — Guide to aged care law: information management"

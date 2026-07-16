@@ -8,6 +8,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import InfoPage from "./pages/InfoPage";
+import LegalPage from "./pages/LegalPage";
 import LeadPage from "./pages/LeadPage";
 import ProductPage from "./pages/ProductPage";
 import Solutions from "./pages/Solutions";
@@ -38,8 +39,8 @@ function Router() {
       <Route path="/pricing"><LeadPage /></Route>
       <Route path="/resources"><InfoPage type="resources" /></Route>
       <Route path="/security"><InfoPage type="security" /></Route>
-      <Route path="/privacy"><InfoPage type="privacy" /></Route>
-      <Route path="/terms"><InfoPage type="terms" /></Route>
+      <Route path="/privacy"><LegalPage type="privacy" /></Route>
+      <Route path="/terms"><LegalPage type="terms" /></Route>
       <Route path="/cookies"><InfoPage type="cookies" /></Route>
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />

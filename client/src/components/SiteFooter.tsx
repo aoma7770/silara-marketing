@@ -38,8 +38,8 @@ export default function SiteFooter() {
         </div>
         <div className="footer-column">
           <strong>Legal</strong>
-          <Link href="/privacy">Privacy</Link>
-          <Link href="/terms">Terms</Link>
+          <Link href="/privacy">B2B Privacy Policy</Link>
+          <Link href="/terms">B2B Terms of Service</Link>
           <Link href="/cookies">Cookies</Link>
           <a href="#" aria-label="Silara Marketing on LinkedIn"><Linkedin size={18} /> LinkedIn</a>
         </div>
@@ -51,4 +51,3 @@ export default function SiteFooter() {
     </footer>
   );
 }
-

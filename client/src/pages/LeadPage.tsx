@@ -1,7 +1,7 @@
 // Design reminder: lead capture should feel consultative, transparent, and low-pressure while keeping the next action unmistakable.
 import { ArrowRight, Check, Mail, ShieldCheck } from "lucide-react";
 import { useMemo } from "react";
-import { useLocation } from "wouter";
+import { Link, useLocation } from "wouter";
 import PageShell from "@/components/PageShell";
 import { productList, supportEmail } from "@/data/site";
 
@@ -29,6 +29,7 @@ export default function LeadPage({ contactOnly = false }: { contactOnly?: boolea
             <label>Primary pressure<span>Tell us what needs attention</span></label>
             <label>Preferred next step<span>Select a suitable conversation time</span></label>
             <div className="lead-embed__placeholder"><ShieldCheck /><p>Your live form or booking experience will appear here once the embed URL is supplied.</p></div>
+            <p className="lead-embed__legal">When connected, submissions will be handled under our <Link href="/privacy">Privacy Policy</Link> and <Link href="/terms">B2B Terms</Link>. Do not include participant, resident, patient, incident, clinical, worker-screening or other sensitive information in this form.</p>
             <button type="button" className="button button--dark" disabled>Embed connection required <ArrowRight size={16} /></button>
           </div>
         </div>
@@ -36,4 +37,3 @@ export default function LeadPage({ contactOnly = false }: { contactOnly?: boolea
     </PageShell>
   );
 }
-

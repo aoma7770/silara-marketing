@@ -34,3 +34,20 @@
 - [x] Avoid invented testimonials, endorsements, regulatory approvals, data-residency claims, or guaranteed compliance claims.
 - [x] Implement responsive navigation, working routes, accessible focus states, and mobile-friendly CTA sizing.
 - [x] Validate sales pages, lead paths, quiz placeholders, footer links, and contact details.
+
+## B2B legal pages
+
+- [x] Confirm the documents apply to business customers, authorised users, website visitors, prospects, and product users rather than consumer care recipients.
+- [x] Research current Australian Privacy Act and Australian Privacy Principles guidance relevant to Silara's website and SaaS products.
+- [x] Research current ACCC guidance on unfair contract terms, consumer guarantees, representations, subscriptions, and B2B small-business contracts.
+- [x] Research relevant NDIS provider, aged-care provider, health-information, direct-marketing, and electronic-communications obligations and boundaries.
+- [x] Draft a professional Privacy Policy covering collection, use, disclosure, storage, security, overseas handling, marketing, access, correction, complaints, retention, cookies, and product data roles.
+- [x] Draft professional B2B Terms of Service covering accounts, authorised users, acceptable use, customer responsibilities, AI and automation limits, sector obligations, fees, renewals, suspension, termination, confidentiality, intellectual property, privacy, warranties, liability, indemnities, disputes, and governing law.
+- [x] Distinguish Silara's role as a B2B technology and marketing provider from the customer's responsibility for participant, resident, client, worker, clinical, safeguarding, suitability, and regulatory decisions.
+- [x] Add product-specific responsible-use provisions for APGP, IncidentIQ, NoteGuard, CredsVault, and ProviderPulse.
+- [x] Avoid claims that the documents guarantee ACCC, NDIS, aged-care, privacy, or other regulatory compliance.
+- [x] Mark business identity, ABN, address, telephone, governing state, subprocessors, hosting regions, retention periods, and response timeframes for confirmation where not yet supplied.
+- [x] Integrate the Privacy Policy and Terms of Service as readable, responsive website pages.
+- [x] Link the legal pages from the footer, lead forms, quiz stages, and relevant account or enquiry consent text.
+- [x] Validate routes, typography, mobile readability, internal links, and legal-review caveats.
+- [x] Create a revised final checkpoint and legal-document handover summary.

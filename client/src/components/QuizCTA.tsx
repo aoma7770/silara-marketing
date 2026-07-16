@@ -19,7 +19,7 @@ export default function QuizCTA({ product }: { product: Product }) {
           <div className="quiz-preview-row"><span>02</span><p>Where is the greatest operational pressure?</p></div>
           <div className="quiz-preview-row"><span>03</span><p>What would a useful next step look like?</p></div>
           <div className="wufoo-stage__footer">
-            <small>Embed destination ready when your Wufoo URL is supplied.</small>
+            <small>Embed destination ready when your Wufoo URL is supplied. Future submissions will be subject to our <Link href="/privacy">Privacy Policy</Link> and <Link href="/terms">B2B Terms</Link>. Do not include sensitive care information.</small>
             <Link href={`/book-demo?product=${product.key}`} className="button button--dark">Schedule a call <ArrowRight size={16} /></Link>
           </div>
         </div>
@@ -27,4 +27,3 @@ export default function QuizCTA({ product }: { product: Product }) {
     </section>
   );
 }
-
