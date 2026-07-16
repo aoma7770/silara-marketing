@@ -1,0 +1,36 @@
+# Silara Marketing website checklist
+
+- [x] Review and incorporate the website master prompt and business plan throughout the brand and site.
+- [x] Create a luxury private-equity-inspired Silara Marketing symbol/logo with a transparent background.
+- [x] Build a cohesive premium visual identity using Midnight Teal, Sea Green, restrained Warm Gold, Pearl, and editorial typography.
+- [x] Keep Silara's parent-brand navigation, typography, logo, spacing, and conversion patterns consistent across all pages.
+- [x] Give APGP, IncidentIQ, NoteGuard, CredsVault, and ProviderPulse distinct, memorable accent colour systems within the Silara parent identity.
+- [x] Inspect the live APGP website and match the Silara APGP page to its existing colour language.
+- [x] Validate accessible contrast for every product-specific colour combination.
+- [x] Make lead generation the primary goal of the information architecture and copy.
+- [x] Position Australian care providers as the primary audience across every page and conversion path.
+- [x] Use Australian English and sector-relevant language for NDIS, aged-care, disability-services, and allied-health organisations.
+- [x] Ensure the central brand promise communicates practical support for local providers to grow responsibly, strengthen compliance, and succeed sustainably.
+- [x] Build a conversion-focused homepage with clear primary and secondary CTAs.
+- [x] Build a dedicated APGP Referral Program sales page.
+- [x] Build a dedicated IncidentIQ sales page.
+- [x] Build a dedicated NoteGuard sales page.
+- [x] Build a dedicated CredsVault sales page.
+- [x] Build a dedicated ProviderPulse sales page.
+- [x] Give each product page a clear problem–solution–benefit–proof–CTA sales structure.
+- [x] Do not publish pricing for any Silara product or service.
+- [x] Drive every product page toward scheduling a call rather than checkout or price comparison.
+- [x] Add a polished quiz-style CTA section to each product page.
+- [x] Prepare each quiz CTA section for a future Wufoo form embed without inventing live form URLs.
+- [x] Build a high-trust About Us page with a compelling origin story.
+- [x] Write a strong mission focused on responsible growth and practical systems for Australian care providers.
+- [x] Write a strong vision for becoming a trusted portfolio of growth and compliance products.
+- [x] Present strategic principles and values including accountability, simplicity, integrity, human responsibility, and provider-participant trust.
+- [x] Use support@silaramarketing.com.au consistently as the public email address.
+- [x] Make APGP the only product with a direct external website link.
+- [x] Link the APGP page prominently to https://www.apgpaccommodation.com.au/.
+- [x] Use clearly editable placeholders for other contact details.
+- [x] Keep all unreleased SaaS products labelled as in development or early access.
+- [x] Avoid invented testimonials, endorsements, regulatory approvals, data-residency claims, or guaranteed compliance claims.
+- [x] Implement responsive navigation, working routes, accessible focus states, and mobile-friendly CTA sizing.
+- [x] Validate sales pages, lead paths, quiz placeholders, footer links, and contact details.
