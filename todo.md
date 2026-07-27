@@ -51,3 +51,14 @@
 - [x] Link the legal pages from the footer, lead forms, quiz stages, and relevant account or enquiry consent text.
 - [x] Validate routes, typography, mobile readability, internal links, and legal-review caveats.
 - [x] Create a revised final checkpoint and legal-document handover summary.
+
+## Supplied-logo identity refresh
+
+- [x] Use the supplied Silara Marketing network-symbol wordmark as the primary website logo.
+- [x] Derive the parent-brand colour system from the supplied logo's deep navy and teal gradient.
+- [x] Replace the existing Silara Gate mark in the header, footer, favicon treatment, and relevant visual motifs.
+- [x] Preserve the established product-specific accent system while harmonising it with the new navy-and-teal parent identity.
+- [x] Recalibrate backgrounds, primary buttons, links, focus states, legal pages, and product surfaces for accessible contrast.
+- [x] Update the brand and website handover guide to document the new logo and colour system.
+- [x] Validate the refreshed homepage, product, lead, and legal pages on desktop and mobile.
+- [x] Save a refreshed final checkpoint for the logo-led identity update.

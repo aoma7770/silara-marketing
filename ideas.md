@@ -32,9 +32,9 @@ First, **trust before spectacle**: every page earns attention through hierarchy,
 
 ### Color Philosophy
 
-Midnight Teal is the principal field because it signals healthcare trust, institutional stability, and depth without using the predictable corporate navy. Soft Pearl creates breathable reading surfaces and reflects the practical warmth of care environments. Sea Green is used to denote operational progress, active workflow, and positive status. Warm Gold is treated as **capital-grade emphasis** rather than decoration: it marks only decisive actions, key numbers, and the Silara symbol. This restraint makes every gold element feel intentional and premium.
+The supplied Silara Marketing wordmark establishes a **deep navy-to-signal-teal** brand system. Deep Navy creates the institutional confidence and care-sector credibility required for a B2B operating partner; Signal Teal carries connection, practical momentum, and the human-facing clarity of the network symbol. Soft Canvas replaces the previous warm Pearl as the principal reading surface, creating a crisper, more contemporary contrast to the logo’s blue-toned spectrum.
 
-The signature ownable colour is **Silara Gold `#D6A84B`**. It should never become a large background field. Its role is to carry recognition and conversion energy across the identity.
+The signature ownable colour is **Silara Signal Teal `#159CB1`**, supported by **Silara Deep Navy `#062A63`** and **Silara Depth `#031B44`**. Teal, rather than gold, now carries recognition and conversion energy. It may be used for primary calls to action, active states, evidence lines, key numerals, and high-confidence highlights, while Deep Navy remains the dominant field for long-form institutional content.
 
 Silara functions as the **parent-brand constant**, while every product receives a distinctive accent colour and page atmosphere. The logo, typography, editorial ledger layout, navigation, CTA hierarchy, and trust patterns remain consistent, ensuring that the portfolio still feels unified. Product colours appear in chapter labels, hero atmosphere, interface states, quiz panels, diagrams, and active navigation—not in the global Silara wordmark.
 
@@ -52,7 +52,7 @@ The live APGP website uses a bright aqua-teal primary accent, deep blue-navy tex
 | CredsVault | Workforce assurance | `oklch(0.54 0.11 150)` | `oklch(0.95 0.03 150)` | Readiness, verification, stability |
 | ProviderPulse | Reputation and feedback | `oklch(0.58 0.12 335)` | `oklch(0.95 0.025 335)` | Listening, trust, human response |
 
-These accents should never replace the Silara Gold primary CTA on parent-brand pages. On a dedicated product page, the product accent may lead diagrams, overlines, status chips, quiz framing, and one product-specific secondary CTA, while the main scheduled-call CTA remains Silara Gold for cross-site conversion consistency.
+These accents should never replace the Silara Signal Teal primary CTA on parent-brand pages. On a dedicated product page, the product accent may lead diagrams, overlines, status chips, quiz framing, and one product-specific secondary CTA, while the main scheduled-call CTA remains Silara Signal Teal for cross-site conversion consistency.
 
 ### Layout Paradigm
 
@@ -62,11 +62,11 @@ The page rhythm alternates between dense, dark, executive sections and spacious 
 
 ### Signature Elements
 
-The first signature motif is the **Silara Gate**: two vertical pillars connected by a rising diagonal, used in the monogram and repeated subtly as cropped lines, section brackets, and product-card geometry. It represents access, structure, and upward movement. The second motif is the **gold evidence line**, a thin warm-metal rule that connects headings, metrics, and CTA areas like a controlled investment memo. The third is the **portfolio index**, a small numbered label system—`01 APGP`, `02 IncidentIQ`, and so on—that gives the website the disciplined feel of a holdings portfolio.
+The first signature motif is the **Silara Network**: four connected nodes forming a diamond-shaped pathway, drawn with a Deep Navy-to-Signal Teal gradient. It represents connected care operations, referral pathways, evidence continuity, and confident forward movement. The second motif is the **signal line**, a thin navy-to-teal rule that connects headings, metrics, diagrams, and CTA areas like a controlled operating pathway. The third is the **portfolio index**, a small numbered label system—`01 APGP`, `02 IncidentIQ`, and so on—that gives the website the disciplined feel of a holdings portfolio.
 
 ### Interaction Philosophy
 
-Interactions should feel decisive, quiet, and well-governed. Buttons respond immediately with a small press-scale and a soft gold or teal shadow. Navigation panels open with compact opacity and translation changes rather than theatrical motion. Product cards expose more context on hover using an evidence-line shift and a controlled background change. Every interaction should reinforce the sense that Silara makes complex operations easier to understand and control.
+Interactions should feel decisive, quiet, and well-governed. Buttons respond immediately with a small press-scale and a restrained navy or signal-teal shadow. Navigation panels open with compact opacity and translation changes rather than theatrical motion. Product cards expose more context on hover using a signal-line shift and a controlled background change. Every interaction should reinforce the sense that Silara makes complex operations easier to understand and control.
 
 ### Animation
 
@@ -104,9 +104,9 @@ The About page should explain that Silara was founded around a simple frustratio
 
 ### Wordmark & Logo
 
-The logo is a **Silara Gate monogram**: a bold, geometric symbol formed from two upright architectural pillars and a rising diagonal bridge that also creates an abstract `S` in negative space. The mark should feel equally at home on an investment memorandum, a healthcare technology dashboard, and a premium office plaque. The symbol must be created without text on a transparent background, then paired on the website with a custom typeset wordmark using Manrope with widened tracking and a small institutional descriptor.
+The supplied **Silara Marketing network-wordmark** is now the primary brand asset. Its distinctive diamond network symbol contains four circular nodes connected by Deep Navy-to-Signal Teal paths, paired with the SILARA wordmark and spaced MARKETING descriptor. It signals connected systems, practical pathways, and measurable progress for Australian care providers.
 
-The logo should be used at a clearly visible size in the header, footer, favicon, product ownership lockups, and social-share treatment. Gold-on-teal is the principal lockup; teal-on-Pearl is the secondary lockup.
+The full supplied wordmark must remain intact on white or Soft Canvas grounds; it must not be recoloured, redrawn, or replaced by the retired Silara Gate. On dark surfaces, the wordmark is placed on a crisp white lockup panel to retain clear recognition. The network motif may appear as a simplified, non-wordmark visual reference in diagrams, section details, favicon treatment, and social-share art.
 
 ### Lead-Generation System
 
@@ -126,6 +126,6 @@ The site must never invent customer testimonials, reviews, partner logos, securi
 
 Instrument Serif is reserved for hero headlines, major editorial statements, key numerals, and selected emphasis words. Manrope carries product explanations, card titles, tables, navigation, workflow labels, and interface-adjacent hierarchy so the company reads as institutional and operational rather than fashion-editorial.
 
-Silara Gold `#D6A84B` is limited to the logo mark, primary calls to action, key numerals, thin evidence rules, and small recognition accents. It must not be used as a broad background field.
+The supplied-logo system supersedes the former Silara Gate and Gold identity. Use Deep Navy `#062A63`, Silara Depth `#031B44`, Signal Teal `#159CB1`, supporting Aqua `#20B1C2`, Soft Canvas `#F7FAFC`, and Mist `#EAF3F6`. No broad gold surfaces or gold primary CTAs remain in the refreshed experience.
 
 Every dedicated product page includes a product-specific operating diagram or evidence ledger. APGP visualises vacancy-to-suitable-opportunity movement; IncidentIQ visualises deadline and evidence continuity; NoteGuard visualises documentation review; CredsVault visualises workforce-readiness exceptions; ProviderPulse visualises an owned service-recovery loop.

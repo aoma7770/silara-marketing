@@ -21,13 +21,19 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/solutions" component={Solutions} />
       <Route path="/apgp-referrals"><ProductPage product={products.apgp} /></Route>
+      <Route path="/solutions/apgp"><ProductPage product={products.apgp} /></Route>
+      <Route path="/solutions/apgp-referrals"><ProductPage product={products.apgp} /></Route>
       <Route path="/incidentiq"><ProductPage product={products.incidentiq} /></Route>
       <Route path="/incident-iq"><ProductPage product={products.incidentiq} /></Route>
+      <Route path="/solutions/incidentiq"><ProductPage product={products.incidentiq} /></Route>
       <Route path="/noteguard"><ProductPage product={products.noteguard} /></Route>
+      <Route path="/solutions/noteguard"><ProductPage product={products.noteguard} /></Route>
       <Route path="/creds-vault"><ProductPage product={products.credsvault} /></Route>
       <Route path="/credsvault"><ProductPage product={products.credsvault} /></Route>
+      <Route path="/solutions/credsvault"><ProductPage product={products.credsvault} /></Route>
       <Route path="/provider-pulse"><ProductPage product={products.providerpulse} /></Route>
       <Route path="/providerpulse"><ProductPage product={products.providerpulse} /></Route>
+      <Route path="/solutions/providerpulse"><ProductPage product={products.providerpulse} /></Route>
       <Route path="/about" component={About} />
       <Route path="/who-we-help" component={WhoWeHelp} />
       <Route path="/who-we-help/ndis-providers" component={WhoWeHelp} />

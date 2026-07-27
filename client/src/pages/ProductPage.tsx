@@ -1,4 +1,4 @@
-// Design reminder: each product owns a memorable accent while Silara's typography, ledger structure, and gold conversion cue remain constant.
+// Design reminder: each product owns a memorable accent while Silara's navy-to-teal network identity, ledger structure, and conversion pathway remain constant.
 import { ArrowRight, ArrowUpRight, Check, ShieldCheck } from "lucide-react";
 import { Link } from "wouter";
 import PageShell from "@/components/PageShell";

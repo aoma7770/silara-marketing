@@ -21,8 +21,7 @@ export default function SiteFooter() {
           <BrandLogo light />
           <p>Supporting Australian care providers with focused systems for responsible growth, stronger compliance, and more confident operations.</p>
           <a href={`mailto:${supportEmail}`}>{supportEmail}</a>
-          <span>Phone: [Australian contact number]</span>
-          <span>Office: [Australian office location]</span>
+          <span>Business-to-business enquiries are managed by our Australian team.</span>
         </div>
         <div className="footer-column">
           <strong>Products</strong>

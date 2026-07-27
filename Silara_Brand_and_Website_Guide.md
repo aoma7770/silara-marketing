@@ -12,13 +12,14 @@ The website uses an **Institutional Care Capital** identity: private-equity-leve
 
 | Element | Specification | Role |
 | --- | --- | --- |
-| Parent brand | Midnight Teal and Soft Pearl | Trust, stability, and readable institutional structure |
-| Signature accent | Silara Gold `#D6A84B` | Logo, primary calls to action, key numerals, and thin evidence rules |
+| Parent brand | Silara Navy `#031B44`, Signal Teal `#159CB1`, Aqua `#20B1C2`, and Cloud `#F7FAFC` | Established directly from the supplied network-wordmark; balances institutional trust, care-sector clarity, and digital precision |
+| Primary conversion accent | Signal Teal `#159CB1` | Calls to action, key numerals, active states, pathways, and evidence signals |
 | Display type | Instrument Serif | Hero headlines, major editorial statements, and selected numerals |
 | Operational type | Manrope | Navigation, body copy, product explanations, cards, controls, and workflow diagrams |
-| Primary motif | Silara Gate | Access, structure, upward movement, and accountable pathways |
+| Primary logo | Supplied Silara Marketing network-symbol wordmark | The primary brand asset across header, footer and document head; always shown in its white institutional seal treatment on dark surfaces |
+| Primary motif | Silara Network diamond-node system | Connected care operations, traceable pathways, visibility, and responsible accountability |
 
-Silara Gold is intentionally restrained. It is not used as a large decorative background field, preserving its role as the portfolio’s recognition and conversion signal.
+The retired gold-led Silara Gate system is no longer used. The supplied network symbol now appears as a recurring structural device in hero, legal, lead and product experiences, with thin rules and operating diagrams carrying the same connected-system language. The full supplied wordmark is never recoloured, stretched, or separated from its network mark. On dark fields it sits in a white seal with deliberate breathing room so the original artwork remains legible.
 
 ## Product colour system
 
@@ -30,7 +31,7 @@ Silara Gold is intentionally restrained. It is not used as a large decorative ba
 | CredsVault | Assurance green | Verification, readiness, and workforce control |
 | ProviderPulse | Refined berry | Feedback, response ownership, and service recovery |
 
-The APGP sales page deliberately reflects the live APGP website’s aqua-teal and deep-navy character, creating a consistent bridge to [apgpaccommodation.com.au](https://www.apgpaccommodation.com.au/).
+The APGP sales page deliberately reflects the live APGP website’s aqua-teal and deep-navy character, creating a consistent bridge to [apgpaccommodation.com.au](https://www.apgpaccommodation.com.au/). Product-specific accents complement—but do not replace—the Silara Navy-to-Teal parent system.
 
 ## Conversion model
 
@@ -38,7 +39,7 @@ The website does not publish product pricing. Each product is explained through 
 
 Every product page includes a tailored quiz-stage placeholder prepared for a future Wufoo embed. When the Wufoo URLs are available, replace the preview block in `client/src/components/QuizCTA.tsx` with the supplied Wufoo embed code. The general scheduling or enquiry embed belongs in `client/src/pages/LeadPage.tsx`.
 
-Until those embeds are connected, the site uses `support@silaramarketing.com.au` as the working fallback. The telephone number and office location remain clearly marked placeholders in `client/src/data/site.ts` and should be updated before publication.
+Until those embeds are connected, the site uses `support@silaramarketing.com.au` as the working fallback. Public phone, office, legal-entity and address placeholders are intentionally withheld from customer-facing layouts until verified; add them only after confirmation.
 
 ## Key routes
 
