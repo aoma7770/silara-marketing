@@ -137,7 +137,7 @@ p { color: var(--muted-ink); }
 .brand-logo { display: inline-flex; align-items: center; min-width: fit-content; }
 .brand-logo__lockup { position: relative; display: block; width: 210px; height: 60px; overflow: hidden; }
 .brand-logo__wordmark { position: absolute; top: 50%; left: 50%; width: 235px; max-width: none; height: auto; transform: translate(-50%, -50%); }
-.brand-logo--on-dark .brand-logo__wordmark { filter: drop-shadow(0 1px 10px rgb(3 27 68 / 24%)); }
+.brand-logo--on-dark .brand-logo__wordmark { filter: none; }
 .desktop-nav { display: flex; align-items: center; gap: 1.8rem; }
 .nav-link { display: inline-flex; align-items: center; gap: 0.35rem; color: oklch(0.94 0.01 200); background: none; border: 0; padding: 0.6rem 0; font: 600 0.72rem/1 "Manrope", sans-serif; letter-spacing: 0.035em; }
 .nav-link:hover { color: var(--silara-aqua); }

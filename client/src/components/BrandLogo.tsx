@@ -2,7 +2,7 @@
 import { Link } from "wouter";
 
 const lightSurfaceLogoUrl = "/manus-storage/silara-network-wordmark-transparent_7831e7cb.png";
-const darkSurfaceLogoUrl = "/manus-storage/silara-network-wordmark-dark-surface_69736508.png";
+const darkSurfaceLogoUrl = "/manus-storage/silara-network-wordmark-navy-lockup_2031ab61.png";
 
 export default function BrandLogo({ light = false }: { light?: boolean }) {
   const logoUrl = light ? darkSurfaceLogoUrl : lightSurfaceLogoUrl;

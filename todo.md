@@ -77,3 +77,4 @@
 - [x] Replace the current white-panel logo treatment in the header, footer and document head with the transparent lockup.
 - [x] Adjust logo sizing, contrast and spacing so the mark blends naturally into navy surfaces without losing legibility.
 - [x] Validate the logo treatment on desktop and mobile and save an updated checkpoint.
+- [x] Remove the checkerboard fallback from the dark-surface wordmark treatment and verify a seamless navy header and footer presentation.
