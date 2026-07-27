@@ -1,4 +1,4 @@
-// Design reminder: Institutional Care Capital — asymmetric editorial layout, gold conversion cues, and a supportive Australian provider narrative.
+// Design reminder: Institutional Care Capital — asymmetric editorial layout, signal-teal conversion cues, and a supportive Australian provider narrative with clear care-provider SEO language.
 import { ArrowRight, ArrowUpRight, Check, FileWarning, Layers3, ShieldCheck, Sparkles, UsersRound } from "lucide-react";
 import { Link } from "wouter";
 import PageShell from "@/components/PageShell";
@@ -12,15 +12,15 @@ export default function Home() {
   return (
     <PageShell>
       <section className="home-hero">
-        <img src={heroImage} alt="Australian care professionals within a refined operational technology environment" className="home-hero__image" />
+        <img src={heroImage} alt="Australian NDIS, aged care and allied health professionals using connected care-provider workflow systems" className="home-hero__image" />
         <div className="home-hero__veil" />
         <div className="container home-hero__content">
           <div className="hero-chapter"><span>Silara / 2026</span><i /></div>
           <div className="home-hero__grid">
             <div className="home-hero__copy">
               <span className="eyebrow eyebrow--light">For Australian care providers</span>
-              <h1>Growth and compliance, <em>solved.</em></h1>
-              <p>We build the focused systems NDIS, aged-care, disability-services, and allied-health providers need to grow responsibly—without the administrative chaos.</p>
+              <h1>Australian care-provider growth and compliance, <em>solved.</em></h1>
+              <p>Silara Marketing builds NDIS growth, aged care compliance, disability-service workflow and allied-health marketing systems that help Australian care providers grow responsibly—without the administrative chaos.</p>
               <div className="hero-actions">
                 <Link href="/book-demo" className="button button--gold">Schedule a discovery call <ArrowRight size={17} /></Link>
                 <Link href="/solutions" className="button button--ghost-light">Explore the portfolio</Link>
@@ -48,8 +48,8 @@ export default function Home() {
           <div>
             <ScrollReveal className="section-heading section-heading--wide">
               <span className="eyebrow">The operational reality</span>
-              <h2>You didn’t build a care business to spend your best hours chasing systems.</h2>
-              <p>Local providers are expected to grow, document, report, verify, respond, and improve—often through tools that were never designed for the work.</p>
+              <h2>Care-provider growth and compliance should not depend on disconnected systems.</h2>
+              <p>Australian NDIS, aged-care, disability-service and allied-health providers are expected to grow, document, report, verify, respond and improve—often through tools that were never designed for the work.</p>
             </ScrollReveal>
             <div className="problem-grid">
               {[
@@ -70,7 +70,7 @@ export default function Home() {
         <div className="container">
           <div className="portfolio-heading">
             <div className="section-rail"><span className="chapter-number">02</span><span>The portfolio</span></div>
-            <div className="section-heading"><span className="eyebrow">One accountable partner</span><h2>Five focused solutions. <em>No oversized platform.</em></h2></div>
+            <div className="section-heading"><span className="eyebrow">One accountable partner</span><h2>Five care-provider workflow solutions. <em>No oversized platform.</em></h2></div>
             <p>Start with the workflow creating the most pressure. Add more only when your team is ready.</p>
           </div>
           <div className="portfolio-visual"><img src={portfolioImage} alt="Conceptual portfolio interfaces for incident, documentation, credential, and reputation workflows" /><span>Product concepts — interfaces may change</span></div>
@@ -91,7 +91,7 @@ export default function Home() {
         <div className="container editorial-grid">
           <div className="section-rail section-rail--light"><span className="chapter-number">03</span><span>Our difference</span></div>
           <div>
-            <div className="section-heading section-heading--light"><span className="eyebrow eyebrow--light">Built for Australian care providers</span><h2>Focused enough to implement. Serious enough to trust.</h2></div>
+            <div className="section-heading section-heading--light"><span className="eyebrow eyebrow--light">Built for Australian care providers</span><h2>NDIS, aged-care and allied-health systems focused enough to implement. Serious enough to trust.</h2></div>
             <div className="principle-list">
               {[
                 ["Sector-aware by design", "Workflows, terminology, and priorities shaped around Australian NDIS, aged-care, disability-services, and allied-health operations."],
@@ -106,7 +106,7 @@ export default function Home() {
 
       <section className="section support-section">
         <div className="container support-grid">
-          <div className="section-heading"><span className="eyebrow">Who we support</span><h2>Local expertise for providers doing essential work.</h2><p>Silara is here to help growing care businesses succeed with more clarity, control, and confidence.</p><Link href="/who-we-help" className="text-link">Explore who we help <ArrowRight size={16} /></Link></div>
+          <div className="section-heading"><span className="eyebrow">Who we support</span><h2>Local marketing, workflow and compliance support for providers doing essential work.</h2><p>Silara is here to help Australian NDIS, aged-care, disability-service and allied-health businesses succeed with more clarity, control, and confidence.</p><Link href="/who-we-help" className="text-link">Explore who we help <ArrowRight size={16} /></Link></div>
           <div className="support-cards">
             {[
               ["NDIS & disability services", "Incidents, evidence, worker readiness, participant records, and sustainable service growth."],

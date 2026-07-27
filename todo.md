@@ -78,3 +78,11 @@
 - [x] Adjust logo sizing, contrast and spacing so the mark blends naturally into navy surfaces without losing legibility.
 - [x] Validate the logo treatment on desktop and mobile and save an updated checkpoint.
 - [x] Remove the checkerboard fallback from the dark-surface wordmark treatment and verify a seamless navy header and footer presentation.
+
+## Homepage SEO keyword improvement
+
+- [x] Audit the homepage title, description, canonical metadata, heading hierarchy, visible copy and source-level keyword coverage.
+- [x] Add natural primary and supporting terms for Australian care-provider growth, NDIS, aged care, allied health, compliance and workflow systems.
+- [x] Preserve the premium brand voice while making keyword relevance explicit for search crawlers.
+- [x] Validate page source, semantic headings, responsive rendering and production build after the SEO update.
+- [x] Save a checkpoint for the homepage SEO improvement.
