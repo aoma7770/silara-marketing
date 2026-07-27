@@ -135,9 +135,9 @@ p { color: var(--muted-ink); }
 .site-header--solid { height: 72px; background: rgb(3 27 68 / 96%); backdrop-filter: blur(18px); box-shadow: 0 12px 30px rgb(3 27 68 / 18%); }
 .site-header__inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
 .brand-logo { display: inline-flex; align-items: center; min-width: fit-content; }
-.brand-logo__lockup { position: relative; display: block; width: 190px; height: 58px; overflow: hidden; background: #fff; border: 1px solid #dce9ee; border-radius: 2px; box-shadow: 0 7px 18px rgb(3 27 68 / 12%); }
-.brand-logo__wordmark { position: absolute; top: -26px; left: 0; width: 190px; max-width: none; height: auto; }
-.brand-logo--on-dark .brand-logo__lockup { border-color: rgb(255 255 255 / 88%); box-shadow: 0 10px 22px rgb(0 0 0 / 14%); }
+.brand-logo__lockup { position: relative; display: block; width: 210px; height: 60px; overflow: hidden; }
+.brand-logo__wordmark { position: absolute; top: 50%; left: 50%; width: 235px; max-width: none; height: auto; transform: translate(-50%, -50%); }
+.brand-logo--on-dark .brand-logo__wordmark { filter: drop-shadow(0 1px 10px rgb(3 27 68 / 24%)); }
 .desktop-nav { display: flex; align-items: center; gap: 1.8rem; }
 .nav-link { display: inline-flex; align-items: center; gap: 0.35rem; color: oklch(0.94 0.01 200); background: none; border: 0; padding: 0.6rem 0; font: 600 0.72rem/1 "Manrope", sans-serif; letter-spacing: 0.035em; }
 .nav-link:hover { color: var(--silara-aqua); }
@@ -511,8 +511,8 @@ p { color: var(--muted-ink); }
   .container { width: min(100% - 2rem, 720px); }
   .site-header, .site-header--solid { height: 68px; background: rgb(3 27 68 / 96%); }
   .site-header__actions .button { display: none; }
-  .brand-logo__lockup { width: 166px; height: 51px; }
-  .brand-logo__wordmark { width: 166px; top: -22px; left: 0; }
+  .brand-logo__lockup { width: 182px; height: 52px; }
+  .brand-logo__wordmark { width: 205px; }
   .section { padding: 5.5rem 0; }
   .editorial-grid, .support-grid, .metrics-grid, .strategic-principles__grid, .product-outcomes__grid, .quiz-layout, .lead-page__grid, .legal-hero__inner, .legal-layout { grid-template-columns: 1fr; }
   .legal-hero { padding: 120px 0 60px; }
@@ -563,8 +563,8 @@ p { color: var(--muted-ink); }
 
 @media (max-width: 560px) {
   .container { width: min(100% - 1.4rem, 520px); }
-  .brand-logo__lockup { width: 150px; height: 47px; }
-  .brand-logo__wordmark { width: 150px; top: -19px; left: 0; }
+  .brand-logo__lockup { width: 160px; height: 46px; }
+  .brand-logo__wordmark { width: 180px; }
   .header-email { display: none; }
   .home-hero { min-height: 790px; }
   .home-hero__image { object-position: 62% center; }

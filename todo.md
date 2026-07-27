@@ -69,3 +69,11 @@
 - [x] Insert ABN 93 688 042 177 in all appropriate legal-document and handover-guide identity references.
 - [x] Retain only the still-unconfirmed legal fields, such as address, telephone, governing state, commercial terms, and provider details, as clearly marked pre-publication items.
 - [x] Validate the updated legal pages on desktop and mobile and save a revised checkpoint.
+
+## Transparent logo refinement
+
+- [x] Create a transparent-background version of the supplied Silara Marketing network-wordmark while preserving its proportions and colour fidelity.
+- [x] Create a transparent high-contrast dark-surface wordmark variant so the logo remains legible without a white panel on navy backgrounds.
+- [x] Replace the current white-panel logo treatment in the header, footer and document head with the transparent lockup.
+- [x] Adjust logo sizing, contrast and spacing so the mark blends naturally into navy surfaces without losing legibility.
+- [x] Validate the logo treatment on desktop and mobile and save an updated checkpoint.
