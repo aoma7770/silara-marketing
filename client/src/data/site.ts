@@ -84,9 +84,9 @@ export const products: Record<Product["key"], Product> = {
     summary:
       "IncidentIQ is being designed to help Australian care providers organise classification, deadlines, evidence, escalation, follow-up, and approval without relying on scattered spreadsheets and inboxes.",
     audience: "Compliance, quality, safeguarding, and operations teams",
-    accent: "oklch(0.66 0.15 55)",
-    tint: "oklch(0.95 0.035 70)",
-    dark: "oklch(0.29 0.07 45)",
+    accent: "oklch(0.68 0.12 62)",
+    tint: "oklch(0.95 0.022 72)",
+    dark: "oklch(0.23 0.055 248)",
     quizTitle: "Where is your incident workflow most exposed?",
     quizIntro:
       "A short workflow check can highlight pressure across deadlines, evidence, escalation, and closure.",
@@ -229,4 +229,3 @@ export const products: Record<Product["key"], Product> = {
 export const productList = Object.values(products);
 
 export const supportEmail = "support@silaramarketing.com.au";
-

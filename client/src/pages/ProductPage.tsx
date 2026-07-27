@@ -1,6 +1,7 @@
-// Design reminder: each product owns a memorable accent while Silara's navy-to-teal network identity, ledger structure, and conversion pathway remain constant.
-import { ArrowRight, ArrowUpRight, Check, ShieldCheck } from "lucide-react";
+// Design reminder: each product owns a memorable accent while Silara's navy-to-teal network identity, ledger structure, AI evidence and conversion pathway remain constant.
+import { ArrowRight, ArrowUpRight, BrainCircuit, Check, ShieldCheck } from "lucide-react";
 import { Link } from "wouter";
+import type { CSSProperties } from "react";
 import PageShell from "@/components/PageShell";
 import QuizCTA from "@/components/QuizCTA";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -8,6 +9,49 @@ import type { Product } from "@/data/site";
 
 const apgpImage = "/manus-storage/silara-apgp-supported-living_4bb84a46.jpg";
 const productImage = "/manus-storage/silara-portfolio-interface_0ed7b249.jpg";
+
+const aiProof: Record<Product["key"], { eyebrow: string; title: string; copy: string; image: string; alt: string; signals: string[] }> = {
+  apgp: {
+    eyebrow: "AI-supported preparation",
+    title: "Make the vacancy brief easier to act on.",
+    copy: "Silara can use AI-assisted structure to help teams organise provider-supplied vacancy information and surface follow-up prompts. It does not make matching or suitability decisions.",
+    image: "/manus-storage/silara-sil-sda-ai-matching_d7cd46ff.jpg",
+    alt: "Australian SIL and SDA provider team discussing a supported-living vacancy pathway",
+    signals: ["Structured vacancy context", "Visible follow-up prompts", "Provider-led suitability"],
+  },
+  incidentiq: {
+    eyebrow: "AI-supported workflow intelligence",
+    title: "Surface the next controlled action—not an automated judgement.",
+    copy: "IncidentIQ is being designed to make evidence gaps, due dates and escalation pathways easier for authorised people to see and organise. Regulatory interpretation and approval remain human responsibilities.",
+    image: "/manus-storage/silara-ai-human-oversight-workflow_fe5191c5.jpg",
+    alt: "Care operations leaders reviewing an accountable AI-supported workflow",
+    signals: ["Priority signals", "Evidence continuity", "Human approval gates"],
+  },
+  noteguard: {
+    eyebrow: "AI-supported documentation review",
+    title: "Turn repeatable note-quality patterns into useful coaching cues.",
+    copy: "NoteGuard is designed to flag configurable quality patterns and prepare explainable suggestions for review. It does not silently change records or replace professional judgement.",
+    image: "/manus-storage/silara-allied-health-ai-documentation_282f7040.jpg",
+    alt: "Allied-health professional reviewing documentation with careful human oversight",
+    signals: ["Configurable standards", "Explainable prompts", "Authorised sign-off"],
+  },
+  credsvault: {
+    eyebrow: "AI-supported workforce visibility",
+    title: "Focus attention where readiness needs a closer look.",
+    copy: "CredsVault can help organise workforce evidence and draw attention to exception patterns. Verification standards, employment decisions and allocation approvals remain with the provider.",
+    image: "/manus-storage/silara-aged-care-ai-assurance_04c2f1eb.jpg",
+    alt: "Aged-care operations team reviewing workforce assurance information",
+    signals: ["Exception-led review", "Clear ownership", "Provider verification"],
+  },
+  providerpulse: {
+    eyebrow: "AI-supported service insight",
+    title: "See recurring feedback themes sooner, then respond with care.",
+    copy: "ProviderPulse is designed to assist in grouping feedback patterns and preparing response workflows. Every public response and service-recovery action remains human-led and privacy-aware.",
+    image: "/manus-storage/silara-ndis-ai-pathways_b39c61cb.jpg",
+    alt: "Australian care provider team reviewing connected service pathways",
+    signals: ["Theme visibility", "Owned response routes", "Human-approved communication"],
+  },
+};
 
 const narratives: Record<string, { pressure: string; solution: string; process: string; outcome: string }> = {
   apgp: {
@@ -59,9 +103,10 @@ function OperatingDiagram({ product }: { product: Product }) {
 }
 
 export default function ProductPage({ product }: { product: Product }) {
-  const style = { "--product": product.accent, "--product-tint": product.tint, "--product-dark": product.dark } as React.CSSProperties;
+  const style = { "--product": product.accent, "--product-tint": product.tint, "--product-dark": product.dark } as CSSProperties;
   const image = product.key === "apgp" ? apgpImage : productImage;
   const narrative = narratives[product.key];
+  const proof = aiProof[product.key];
 
   return (
     <PageShell>
@@ -128,6 +173,19 @@ export default function ProductPage({ product }: { product: Product }) {
               <div className="process-grid">
                 {product.steps.map((step, index) => <div key={step.title}><span>0{index + 1}</span><h3>{step.title}</h3><p>{step.copy}</p></div>)}
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section product-ai-proof">
+          <div className="container product-ai-proof__grid">
+            <div className="product-ai-proof__media"><img src={proof.image} alt={proof.alt} /><div className="product-ai-proof__media-label"><BrainCircuit size={16} /><span>Responsible AI · human accountable</span></div></div>
+            <div className="product-ai-proof__copy">
+              <span className="eyebrow">{proof.eyebrow}</span>
+              <h2>{proof.title}</h2>
+              <p>{proof.copy}</p>
+              <div className="product-ai-proof__signals">{proof.signals.map((signal, index) => <div key={signal}><span>0{index + 1}</span><strong>{signal}</strong></div>)}</div>
+              <Link href={`/book-demo?product=${product.key}`} className="text-link">See what an assisted workflow could support <ArrowRight size={15} /></Link>
             </div>
           </div>
         </section>

@@ -1,10 +1,11 @@
-// Design reminder: the About page carries executive trust—human purpose, institutional discipline, and a credible Australian operating story.
-import { ArrowRight, Eye, Flag, HeartHandshake, Scale, ShieldCheck, Sparkles } from "lucide-react";
+// Design reminder: the About page carries executive trust—human purpose, institutional discipline, and a credible Australian operating story with accountable AI assistance.
+import { ArrowRight, BrainCircuit, Eye, Flag, HeartHandshake, Scale, ShieldCheck, Sparkles, UserRoundCheck } from "lucide-react";
 import { Link } from "wouter";
 import PageShell from "@/components/PageShell";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const aboutImage = "/manus-storage/silara-about-local-providers_ab2d81de.jpg";
+const oversightImage = "/manus-storage/silara-ai-human-oversight-workflow_fe5191c5.jpg";
 
 export default function About() {
   return (
@@ -40,6 +41,13 @@ export default function About() {
         <div className="container mission-vision__grid">
           <ScrollReveal className="mission-card"><Flag /><span>Mission</span><h2>Help Australian care providers grow responsibly.</h2><p>We replace fragmented referral, compliance, documentation, workforce, and reputation work with practical systems that strengthen teams and protect the quality of care.</p></ScrollReveal>
           <ScrollReveal className="vision-card" delay={0.08}><Eye /><span>Vision</span><h2>Become Australia’s most trusted portfolio of care-provider growth and compliance products.</h2><p>We aim to be known for helping local NDIS, aged-care, disability-services, and allied-health organisations operate with greater confidence, clarity, and sustainable success.</p></ScrollReveal>
+        </div>
+      </section>
+
+      <section className="section about-ai-proof">
+        <div className="container about-ai-proof__grid">
+          <div className="about-ai-proof__copy"><span className="eyebrow">Our technology position</span><h2>AI should make careful work more visible—not make careful people optional.</h2><p>Silara designs AI-supported workflow signals to help provider teams prepare, prioritise, and spot patterns. We do not position AI as a substitute for professional judgement, safeguarding action, regulatory interpretation, or authorised approval.</p><div className="about-ai-proof__steps"><div><BrainCircuit size={18} /><div><strong>Assist</strong><span>Organise structured information and surface review prompts.</span></div></div><div><UserRoundCheck size={18} /><div><strong>Accountability stays human</strong><span>Authorised people assess context, make decisions, and approve actions.</span></div></div></div></div>
+          <div className="about-ai-proof__media"><img src={oversightImage} alt="Australian care operations leaders reviewing an AI-supported workflow together" /><div className="about-ai-proof__seal"><ShieldCheck size={18} /><span>Built for oversight</span><strong>Assistance with clear boundaries.</strong></div></div>
         </div>
       </section>
 
@@ -80,4 +88,3 @@ export default function About() {
     </PageShell>
   );
 }
-

@@ -86,3 +86,15 @@
 - [x] Preserve the premium brand voice while making keyword relevance explicit for search crawlers.
 - [x] Validate page source, semantic headings, responsive rendering and production build after the SEO update.
 - [x] Save a checkpoint for the homepage SEO improvement.
+
+## AI-enabled visual experience redesign
+
+- [ ] Audit the homepage, target-market, solutions, product, About and lead pages for visual density, interaction quality and AI differentiation.
+- [ ] Create a coordinated visual asset suite showing Australian care-provider settings, target markets, AI-enabled workflow intelligence and responsible human oversight.
+- [ ] Redesign the homepage with more visual moments, scroll-reveal storytelling, operational diagrams and an explicit responsible-AI value proposition.
+- [ ] Add target-market imagery and care-provider use-case storytelling across NDIS, aged care, disability services, allied health, SIL and SDA contexts.
+- [ ] Upgrade solution and product pages with product-specific AI workflow visuals, richer evidence-led diagrams and interactive information moments.
+- [ ] Update the About and lead pages so Silara's AI-supported, human-accountable approach is tangible and consistent.
+- [ ] Preserve accurate claims: AI assists with organisation, drafting, detection and prioritisation; authorised people retain judgement, approvals and regulatory responsibility.
+- [ ] Validate desktop and mobile visual quality, motion preferences, contrast, accessibility, routes and lead conversion paths.
+- [ ] Save a redesigned website checkpoint with the visual and AI-storytelling overhaul.
