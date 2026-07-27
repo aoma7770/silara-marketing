@@ -1,14 +1,14 @@
 # Silara Marketing B2B Terms of Service
 
-**Effective date:** 17 July 2026  
-**Version:** 1.0 — publication draft  
+**Effective date:** 28 July 2026  
+**Version:** 1.1 — publication draft  
 **Commercial contact:** [support@silaramarketing.com.au](mailto:support@silaramarketing.com.au)
 
-> **Important publication note:** These Terms are a balanced Australian B2B drafting baseline, not a substitute for advice from an Australian commercial lawyer. Before publication, Silara must confirm its legal entity, ABN, address, governing state or territory, fee and invoice settings, renewal model, support commitments, data-export window, liability cap, insurance position and product-specific operating model.
+> **Important publication note:** These Terms are a balanced Australian B2B drafting baseline, not a substitute for advice from an Australian commercial lawyer. Before publication, Silara must confirm its address, governing state or territory, fee and invoice settings, renewal model, support commitments, data-export window, liability cap, insurance position and product-specific operating model.
 
 ## 1. Parties and B2B scope
 
-These Terms of Service (**Terms**) are between **[INSERT LEGAL ENTITY NAME] ABN [INSERT ABN] trading as Silara Marketing** (**Silara**, **we**, **us** or **our**) and the organisation identified in an Order Form or otherwise accepting these Terms (**Customer**, **you** or **your**).
+These Terms of Service (**Terms**) are between **Silara Marketing ABN 93 688 042 177** (**Silara**, **we**, **us** or **our**) and the organisation identified in an Order Form or otherwise accepting these Terms (**Customer**, **you** or **your**).
 
 These Terms govern:
 
@@ -330,8 +330,8 @@ External links are provided for convenience. Silara does not control an external
 
 **Commercial and legal contact:** Silara Marketing  
 **Email:** [support@silaramarketing.com.au](mailto:support@silaramarketing.com.au)  
-**Legal entity:** [INSERT LEGAL ENTITY NAME]  
-**ABN:** [INSERT ABN]  
+**Legal entity:** Silara Marketing  
+**ABN:** 93 688 042 177  
 **Address:** [INSERT AUSTRALIAN BUSINESS ADDRESS]  
 **Telephone:** [INSERT AUSTRALIAN TELEPHONE NUMBER]
 
@@ -342,4 +342,3 @@ External links are provided for convenience. Silara does not control an external
 [3]: https://www.agedcarequality.gov.au/providers/quality-standards "Aged Care Quality and Safety Commission — Quality Standards"
 [4]: https://www.health.gov.au/resources/publications/guide-to-aged-care-law/chapter-7-information-management?language=en "Department of Health, Disability and Ageing — Guide to Aged Care Law, Chapter 7"
 [5]: https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees "ACCC — Consumer rights and guarantees"
-

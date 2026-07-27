@@ -39,7 +39,7 @@ The website does not publish product pricing. Each product is explained through 
 
 Every product page includes a tailored quiz-stage placeholder prepared for a future Wufoo embed. When the Wufoo URLs are available, replace the preview block in `client/src/components/QuizCTA.tsx` with the supplied Wufoo embed code. The general scheduling or enquiry embed belongs in `client/src/pages/LeadPage.tsx`.
 
-Until those embeds are connected, the site uses `support@silaramarketing.com.au` as the working fallback. Public phone, office, legal-entity and address placeholders are intentionally withheld from customer-facing layouts until verified; add them only after confirmation.
+Until those embeds are connected, the site uses `support@silaramarketing.com.au` as the working fallback. The confirmed contracting entity is **Silara Marketing ABN 93 688 042 177**. Public phone, office and address details are intentionally withheld from customer-facing layouts until verified; add them only after confirmation.
 
 ## Key routes
 
@@ -61,7 +61,7 @@ Until those embeds are connected, the site uses `support@silaramarketing.com.au`
 
 ## B2B legal-document framework
 
-The website now includes a long-form **B2B Privacy Policy** and **B2B Terms of Service** drafted for Australian business customers and authorised users. The documents cover APGP, IncidentIQ, NoteGuard, CredsVault and ProviderPulse, while preserving the distinction between Silara's technology or marketing role and each care provider's responsibility for participant authority, service suitability, immediate safety, statutory reporting, clinical or professional judgement, worker verification, records, safeguarding and final decisions.
+The website now includes a long-form **B2B Privacy Policy** and **B2B Terms of Service** drafted for Australian business customers and authorised users. The confirmed contracting entity is **Silara Marketing ABN 93 688 042 177**. The documents cover APGP, IncidentIQ, NoteGuard, CredsVault and ProviderPulse, while preserving the distinction between Silara's technology or marketing role and each care provider's responsibility for participant authority, service suitability, immediate safety, statutory reporting, clinical or professional judgement, worker verification, records, safeguarding and final decisions.
 
 The drafting is structured around the Australian Privacy Principles, OAIC health-privacy and data-breach guidance, ACCC guidance on standard-form contracts and unfair terms, ACMA electronic-marketing rules, NDIS Commission incident-management guidance, and the current aged-care Quality Standards and protected-information framework.[1] [2] [3] [4] [5] [6] It preserves non-excludable Australian Consumer Law rights and avoids stating that use of a Silara product guarantees legal or regulatory compliance.
 
@@ -71,7 +71,7 @@ The legal pages are integrated into the footer, call-scheduling stage and every 
 
 | Required confirmation | Where it appears |
 | --- | --- |
-| Contracting legal entity, ABN, business address and telephone | Privacy Policy and Terms contact and party clauses |
+| Business address and telephone | Privacy Policy and Terms contact and party clauses |
 | Governing Australian state or territory and mediation city | Terms dispute and governing-law clauses |
 | Invoice period, renewal notice, month-to-month notice and refund settings | Terms commercial clauses |
 | Liability cap, insurance position and any service-level commitments | Terms risk and Order Form framework |

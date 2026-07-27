@@ -1,14 +1,14 @@
 # Silara Marketing B2B Privacy Policy
 
-**Effective date:** 17 July 2026  
-**Version:** 1.0 — publication draft  
+**Effective date:** 28 July 2026  
+**Version:** 1.1 — publication draft  
 **Privacy contact:** [support@silaramarketing.com.au](mailto:support@silaramarketing.com.au)
 
-> **Important publication note:** This is a professionally prepared operational draft, not a substitute for advice from an Australian privacy lawyer. Before publication, Silara must confirm its legal entity name, ABN, address, telephone number, hosting and overseas-disclosure arrangements, subprocessors, retention schedule, and applicable state or territory health-records laws.
+> **Important publication note:** This is a professionally prepared operational draft, not a substitute for advice from an Australian privacy lawyer. Before publication, Silara must confirm its address, telephone number, hosting and overseas-disclosure arrangements, subprocessors, retention schedule, and applicable state or territory health-records laws.
 
 ## 1. About this Policy
 
-This Privacy Policy explains how **[INSERT LEGAL ENTITY NAME] ABN [INSERT ABN] trading as Silara Marketing** (**Silara**, **we**, **us** or **our**) collects, holds, uses and discloses personal information in connection with:
+This Privacy Policy explains how **Silara Marketing ABN 93 688 042 177** (**Silara**, **we**, **us** or **our**) collects, holds, uses and discloses personal information in connection with:
 
 - the Silara Marketing website, enquiries, demonstrations and business development;
 - our business-to-business products and services, including the **APGP Referral Program, IncidentIQ, NoteGuard, CredsVault and ProviderPulse**;
@@ -200,8 +200,8 @@ We may update this Policy to reflect changes in law, products, suppliers or prac
 
 **Privacy contact:** Silara Marketing Privacy Officer  
 **Email:** [support@silaramarketing.com.au](mailto:support@silaramarketing.com.au)  
-**Legal entity:** [INSERT LEGAL ENTITY NAME]  
-**ABN:** [INSERT ABN]  
+**Legal entity:** Silara Marketing  
+**ABN:** 93 688 042 177  
 **Address:** [INSERT AUSTRALIAN BUSINESS ADDRESS]  
 **Telephone:** [INSERT AUSTRALIAN TELEPHONE NUMBER]
 

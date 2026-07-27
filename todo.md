@@ -62,3 +62,10 @@
 - [x] Update the brand and website handover guide to document the new logo and colour system.
 - [x] Validate the refreshed homepage, product, lead, and legal pages on desktop and mobile.
 - [x] Save a refreshed final checkpoint for the logo-led identity update.
+
+## Legal entity details update
+
+- [x] Replace legal-entity placeholders with Silara Marketing in the B2B Privacy Policy, B2B Terms of Service, and website legal references.
+- [x] Insert ABN 93 688 042 177 in all appropriate legal-document and handover-guide identity references.
+- [x] Retain only the still-unconfirmed legal fields, such as address, telephone, governing state, commercial terms, and provider details, as clearly marked pre-publication items.
+- [x] Validate the updated legal pages on desktop and mobile and save a revised checkpoint.
