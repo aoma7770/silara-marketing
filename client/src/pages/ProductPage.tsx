@@ -1,4 +1,4 @@
-// Design reminder: each product owns a memorable accent while Silara's navy-to-teal network identity, ledger structure, AI evidence and conversion pathway remain constant.
+// Design reminder: APGP is a referral partnership with a direct official handoff; all other products retain Silara's accountable AI operating-system evidence language.
 import { ArrowRight, ArrowUpRight, BrainCircuit, Check, ShieldCheck } from "lucide-react";
 import { Link } from "wouter";
 import type { CSSProperties } from "react";
@@ -11,15 +11,9 @@ import type { Product } from "@/data/site";
 const apgpImage = "/manus-storage/silara-apgp-supported-living_4bb84a46.jpg";
 const productImage = "/manus-storage/silara-portfolio-interface_0ed7b249.jpg";
 
-const aiProof: Record<Product["key"], { eyebrow: string; title: string; copy: string; image: string; alt: string; signals: string[] }> = {
-  apgp: {
-    eyebrow: "AI-supported preparation",
-    title: "Make the vacancy brief easier to act on.",
-    copy: "Silara can use AI-assisted structure to help teams organise provider-supplied vacancy information and surface follow-up prompts. It does not make matching or suitability decisions.",
-    image: "/manus-storage/silara-sil-sda-ai-matching_d7cd46ff.jpg",
-    alt: "Australian SIL and SDA provider team discussing a supported-living vacancy pathway",
-    signals: ["Structured vacancy context", "Visible follow-up prompts", "Provider-led suitability"],
-  },
+type AiProof = { eyebrow: string; title: string; copy: string; image: string; alt: string; signals: string[] };
+
+const aiProof: Partial<Record<Product["key"], AiProof>> = {
   incidentiq: {
     eyebrow: "AI-supported workflow intelligence",
     title: "Surface the next controlled action—not an automated judgement.",
@@ -55,19 +49,19 @@ const aiProof: Record<Product["key"], { eyebrow: string; title: string; copy: st
 };
 
 const ambientScenes: Record<Product["key"], string> = {
-  apgp: "/manus-storage/silara-ndis-ai-pathways_b39c61cb.jpg",
+  apgp: apgpImage,
   incidentiq: "/manus-storage/silara-aged-care-ai-assurance_04c2f1eb.jpg",
   noteguard: "/manus-storage/silara-sil-sda-ai-matching_d7cd46ff.jpg",
   credsvault: "/manus-storage/silara-allied-health-ai-documentation_282f7040.jpg",
   providerpulse: "/manus-storage/silara-ai-human-oversight-workflow_fe5191c5.jpg",
 };
 
-const narratives: Record<string, { pressure: string; solution: string; process: string; outcome: string }> = {
+const narratives: Record<Product["key"], { pressure: string; solution: string; process: string; outcome: string }> = {
   apgp: {
-    pressure: "Vacancies do not move through passive exposure alone.",
-    solution: "Create a clearer route from vacancy to suitable opportunity.",
-    process: "Move from provider brief to an accountable referral decision.",
-    outcome: "A more active pathway, measured by movement and suitability.",
+    pressure: "High-quality SDA and SIL homes can stay vacant while referrals remain unpredictable.",
+    solution: "Move from a vacancy to a supported participant placement pathway.",
+    process: "A referral partnership that runs from provider registration through to move-in.",
+    outcome: "More stable occupancy without upfront referral-program cost.",
   },
   incidentiq: {
     pressure: "Incident risk grows at the handoff between people, dates, and evidence.",
@@ -97,7 +91,8 @@ const narratives: Record<string, { pressure: string; solution: string; process: 
 
 function OperatingDiagram({ product }: { product: Product }) {
   if (product.key === "apgp") {
-    return <div className="operating-diagram operating-diagram--apgp" aria-label="APGP referral pathway diagram"><div className="diagram-title"><span>Operating pathway</span><strong>Vacancy → suitable opportunity</strong></div><div className="pathway-flow">{["Vacancy brief", "Suitability gate", "Referral pathway", "Provider decision"].map((label, index) => <div key={label}><span>0{index + 1}</span><strong>{label}</strong>{index < 3 && <i />}</div>)}</div></div>;
+    const stages = ["Register free", "Share vacancy", "Full intake", "Move-in support", "Pay after move-in"];
+    return <div className="operating-diagram operating-diagram--apgp" aria-label="APGP referral pathway diagram"><div className="diagram-title"><span>Referral partnership</span><strong>Register → vacancy → intake → move-in</strong></div><div className="pathway-flow pathway-flow--five">{stages.map((label, index) => <div key={label}><span>0{index + 1}</span><strong>{label}</strong>{index < stages.length - 1 && <i />}</div>)}</div></div>;
   }
   if (product.key === "incidentiq") {
     return <div className="operating-diagram operating-diagram--incident" aria-label="IncidentIQ deadline and evidence control diagram"><div className="diagram-title"><span>Control ledger</span><strong>Deadline and evidence continuity</strong></div><div className="deadline-ledger">{[["Initial review", "Due today", "Owner assigned"], ["External notification", "Due 14:30", "Evidence linked"], ["Corrective action", "Due 3 days", "Escalation active"]].map(([task, due, state], index) => <div key={task}><span>0{index + 1}</span><strong>{task}</strong><time>{due}</time><em>{state}</em></div>)}</div></div>;
@@ -112,14 +107,16 @@ function OperatingDiagram({ product }: { product: Product }) {
 }
 
 export default function ProductPage({ product }: { product: Product }) {
+  const isApgp = product.key === "apgp";
   const style = { "--product": product.accent, "--product-tint": product.tint, "--product-dark": product.dark } as CSSProperties;
-  const image = product.key === "apgp" ? apgpImage : productImage;
+  const image = isApgp ? apgpImage : productImage;
   const narrative = narratives[product.key];
   const proof = aiProof[product.key];
   const ambientScene = ambientScenes[product.key];
+  const externalCta = isApgp && product.externalUrl ? { href: product.externalUrl, label: "See how it works", heading: "See how APGP works.", copy: "Continue to the official APGP referral pathway for live program details, registration and current provider resources." } : undefined;
 
   return (
-    <PageShell>
+    <PageShell externalCta={externalCta}>
       <div className={`product-page product-page--${product.key}`} style={style}>
         <section className="product-hero">
           <div className="product-hero__wash" />
@@ -129,14 +126,13 @@ export default function ProductPage({ product }: { product: Product }) {
               <h1>{product.headline}</h1>
               <p>{product.summary}</p>
               <div className="hero-actions">
-                <Link href={`/book-demo?product=${product.key}`} className="button button--gold">Schedule a call <ArrowRight size={17} /></Link>
-                <a href="#how-it-works" className="button button--outline-dark">See how it works</a>
+                {isApgp ? <><a href={product.externalUrl} className="button button--gold">See how it works <ArrowUpRight size={17} /></a>{product.registrationUrl && <a href={product.registrationUrl} className="button button--outline-dark">Register free <ArrowUpRight size={17} /></a>}</> : <><Link href={`/book-demo?product=${product.key}`} className="button button--gold">Schedule a call <ArrowRight size={17} /></Link><a href="#how-it-works" className="button button--outline-dark">See how it works</a></>}
               </div>
               <div className="product-audience"><span>Best suited to</span><strong>{product.audience}</strong></div>
             </div>
             <div className="product-hero__media">
-              <img src={image} alt={product.key === "apgp" ? "Accessible Australian supported living environment" : `${product.name} conceptual workflow interface`} />
-              <div className="product-hero__media-label"><span>{product.shortName}</span><small>{product.key === "apgp" ? "Referral pathway" : "Product concept — interface may change"}</small></div>
+              <img src={image} alt={isApgp ? "Accessible Australian supported living environment" : `${product.name} conceptual workflow interface`} />
+              <div className="product-hero__media-label"><span>{product.shortName}</span><small>{isApgp ? "Referral partnership" : "Product concept — interface may change"}</small></div>
             </div>
           </div>
         </section>
@@ -145,85 +141,31 @@ export default function ProductPage({ product }: { product: Product }) {
           <SectionScene src={ambientScene} position="78% center" />
           <div className="container editorial-grid">
             <div className="section-rail"><span className="chapter-number">01</span><span>The pressure</span></div>
-            <div>
-              <div className="section-heading section-heading--wide">
-                <span className="eyebrow">The problem behind the product</span>
-                <h2>{narrative.pressure}</h2>
-              </div>
-              <div className="product-problem__grid">
-                {product.problems.map((problem, index) => <ScrollReveal delay={index * 0.06} key={problem}><span>0{index + 1}</span><p>{problem}</p></ScrollReveal>)}
-              </div>
-            </div>
+            <div><div className="section-heading section-heading--wide"><span className="eyebrow">The problem behind the product</span><h2>{narrative.pressure}</h2></div><div className="product-problem__grid">{product.problems.map((problem, index) => <ScrollReveal delay={index * 0.06} key={problem}><span>0{index + 1}</span><p>{problem}</p></ScrollReveal>)}</div></div>
           </div>
         </section>
 
         <section className="section product-features section--scene scene--mist">
-          <SectionScene src={productImage} position="78% center" />
-          <div className="container">
-            <div className="product-section-heading">
-              <div className="section-rail"><span className="chapter-number">02</span><span>The solution</span></div>
-              <div className="section-heading"><span className="eyebrow">Designed around the actual workflow</span><h2>{narrative.solution}</h2></div>
-            </div>
-            <OperatingDiagram product={product} />
-            <div className="feature-stack">
-              {product.features.map((feature, index) => (
-                <ScrollReveal className="feature-row" key={feature.title}>
-                  <span className="feature-row__number">0{index + 1}</span>
-                  <div className="feature-row__visual"><div><i /><i /><i /></div><span>{product.shortName}</span></div>
-                  <div><h3>{feature.title}</h3><p>{feature.copy}</p></div>
-                </ScrollReveal>
-              ))}
-            </div>
-          </div>
+          <SectionScene src={isApgp ? apgpImage : productImage} position="78% center" />
+          <div className="container"><div className="product-section-heading"><div className="section-rail"><span className="chapter-number">02</span><span>The solution</span></div><div className="section-heading"><span className="eyebrow">Designed around the actual workflow</span><h2>{narrative.solution}</h2></div></div><OperatingDiagram product={product} /><div className="feature-stack">{product.features.map((feature, index) => <ScrollReveal className="feature-row" key={feature.title}><span className="feature-row__number">0{index + 1}</span><div className="feature-row__visual"><div><i /><i /><i /></div><span>{product.shortName}</span></div><div><h3>{feature.title}</h3><p>{feature.copy}</p></div></ScrollReveal>)}</div></div>
         </section>
 
-        <section className="section product-process section--scene scene--deep" id="how-it-works">
-          <SectionScene src={proof.image} position="76% center" tone="deep" />
-          <div className="container editorial-grid">
-            <div className="section-rail section-rail--light"><span className="chapter-number">03</span><span>How it works</span></div>
-            <div>
-              <div className="section-heading section-heading--light"><span className="eyebrow eyebrow--light">A controlled path forward</span><h2>{narrative.process}</h2></div>
-              <div className="process-grid">
-                {product.steps.map((step, index) => <div key={step.title}><span>0{index + 1}</span><h3>{step.title}</h3><p>{step.copy}</p></div>)}
-              </div>
-            </div>
-          </div>
+        <section className="section product-process section--scene scene--deep" id={isApgp ? "apgp-referral-pathway" : "how-it-works"}>
+          <SectionScene src={isApgp ? apgpImage : proof?.image ?? productImage} position="76% center" tone="deep" />
+          <div className="container editorial-grid"><div className="section-rail section-rail--light"><span className="chapter-number">03</span><span>How it works</span></div><div><div className="section-heading section-heading--light"><span className="eyebrow eyebrow--light">A controlled path forward</span><h2>{narrative.process}</h2></div><div className="process-grid">{product.steps.map((step, index) => <div key={step.title}><span>0{index + 1}</span><h3>{step.title}</h3><p>{step.copy}</p></div>)}</div></div></div>
         </section>
 
-        <section className="section product-ai-proof">
-          <div className="container product-ai-proof__grid">
-            <div className="product-ai-proof__media"><img src={proof.image} alt={proof.alt} /><div className="product-ai-proof__media-label"><BrainCircuit size={16} /><span>Responsible AI · human accountable</span></div></div>
-            <div className="product-ai-proof__copy">
-              <span className="eyebrow">{proof.eyebrow}</span>
-              <h2>{proof.title}</h2>
-              <p>{proof.copy}</p>
-              <div className="product-ai-proof__signals">{proof.signals.map((signal, index) => <div key={signal}><span>0{index + 1}</span><strong>{signal}</strong></div>)}</div>
-              <Link href={`/book-demo?product=${product.key}`} className="text-link">See what an assisted workflow could support <ArrowRight size={15} /></Link>
-            </div>
-          </div>
-        </section>
+        {!isApgp && proof && <section className="section product-ai-proof"><div className="container product-ai-proof__grid"><div className="product-ai-proof__media"><img src={proof.image} alt={proof.alt} /><div className="product-ai-proof__media-label"><BrainCircuit size={16} /><span>Responsible AI · human accountable</span></div></div><div className="product-ai-proof__copy"><span className="eyebrow">{proof.eyebrow}</span><h2>{proof.title}</h2><p>{proof.copy}</p><div className="product-ai-proof__signals">{proof.signals.map((signal, index) => <div key={signal}><span>0{index + 1}</span><strong>{signal}</strong></div>)}</div><Link href={`/book-demo?product=${product.key}`} className="text-link">See what an assisted workflow could support <ArrowRight size={15} /></Link></div></div></section>}
 
         <section className="section product-outcomes section--scene scene--light">
           <SectionScene src={image} position="78% center" />
-          <div className="container product-outcomes__grid">
-            <div className="section-heading"><span className="eyebrow">What your team is working towards</span><h2>{narrative.outcome}</h2></div>
-            <div className="outcome-list">
-              {product.outcomes.map((outcome) => <div key={outcome}><span><Check /></span><strong>{outcome}</strong></div>)}
-            </div>
-          </div>
-          {product.externalUrl && (
-            <div className="container apgp-bridge">
-              <div><span className="eyebrow">Continue to the official program</span><h3>Explore APGP’s live provider experience.</h3><p>View the current program details, registration pathway, and provider resources on the official APGP website.</p></div>
-              <a href={product.externalUrl} target="_blank" rel="noreferrer" className="button button--product">Visit the APGP website <ArrowUpRight size={17} /></a>
-            </div>
-          )}
+          <div className="container product-outcomes__grid"><div className="section-heading"><span className="eyebrow">What your team is working towards</span><h2>{narrative.outcome}</h2></div><div className="outcome-list">{product.outcomes.map((outcome) => <div key={outcome}><span><Check /></span><strong>{outcome}</strong></div>)}</div></div>
+          {isApgp && product.externalUrl && <div className="container apgp-bridge"><div><span className="eyebrow">Continue to the official program</span><h3>See how APGP’s live referral pathway works.</h3><p>View current program details, the provider registration pathway and live resources directly on the official APGP website.</p></div><a href={product.externalUrl} className="button button--product">See how it works <ArrowUpRight size={17} /></a></div>}
         </section>
 
         <QuizCTA product={product} />
 
-        <section className="responsible-use">
-          <div className="container responsible-use__inner"><ShieldCheck /><div><strong>Responsible-use statement</strong><p>{product.responsibleUse}</p></div></div>
-        </section>
+        <section className="responsible-use"><div className="container responsible-use__inner"><ShieldCheck /><div><strong>{isApgp ? "Referral responsibility" : "Responsible-use statement"}</strong><p>{product.responsibleUse}</p></div></div></section>
       </div>
     </PageShell>
   );

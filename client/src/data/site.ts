@@ -21,6 +21,7 @@ export type Product = {
   outcomes: string[];
   responsibleUse: string;
   externalUrl?: string;
+  registrationUrl?: string;
 };
 
 export const products: Record<Product["key"], Product> = {
@@ -31,46 +32,48 @@ export const products: Record<Product["key"], Product> = {
     shortName: "APGP",
     slug: "/apgp-referrals",
     status: "Available now",
-    category: "Occupancy growth",
-    headline: "Fill SIL and SDA vacancies with a more active referral pathway.",
+    category: "Referral partnership",
+    headline: "Fill SIL and SDA vacancies through a results-based referral partnership.",
     summary:
-      "APGP connects accommodation providers with suitable participant demand through a structured, provider-funded referral model designed to protect participant choice.",
-    audience: "SIL and SDA providers managing current or upcoming vacancies",
+      "APGP connects SDA and SIL accommodation providers with a consistent, pre-qualified stream of NDIS participant enquiries. Register free and pay only after a participant completes intake and moves in.",
+    audience: "SDA and SIL accommodation providers with current or upcoming vacancies",
     accent: "oklch(0.62 0.13 195)",
     tint: "oklch(0.95 0.035 195)",
     dark: "oklch(0.22 0.07 245)",
-    quizTitle: "How ready is your vacancy for active matching?",
+    quizTitle: "See how APGP’s referral partnership works.",
     quizIntro:
-      "A short vacancy-readiness check can help identify what your team should prepare before an APGP conversation.",
+      "APGP’s live program is built to support vacancy matching, intake coordination and stable move-ins without upfront provider cost.",
     problems: [
       "High-quality homes can remain vacant while referral activity stays inconsistent.",
-      "Generic lead channels create enquiry volume without enough suitability context.",
-      "Provider teams lose time coordinating outreach, intake, and follow-up across disconnected tools.",
+      "Advertising, agency retainers and intake overhead can create cost without a guaranteed placement.",
+      "Provider teams lose time coordinating enquiries, intake, inspection and move-in support across disconnected pathways.",
     ],
     features: [
       {
-        title: "Vacancy intelligence",
-        copy: "Present the support model, location, property features, availability, and suitability criteria in a structured format.",
+        title: "Live participant enquiries",
+        copy: "Register free to access APGP’s live participant-enquiry feed and share the vacancy details that matter to your provider team.",
       },
       {
-        title: "Active matching",
-        copy: "Move beyond passive listing exposure with a pathway designed around suitable participant demand and provider capacity.",
+        title: "End-to-end intake coordination",
+        copy: "APGP coordinates discovery, qualification, suitability assessment, documentation, property matching and inspection scheduling.",
       },
       {
-        title: "Provider-aligned process",
-        copy: "Keep commercial responsibility with the provider while preserving participant choice and suitability assessment.",
+        title: "Pay after a successful move-in",
+        copy: "The placement fee is success-based and quoted per lead—there is no payment until the participant has completed intake and moved in.",
       },
     ],
     steps: [
-      { title: "Share the vacancy", copy: "Provide the essential property and support details without submitting sensitive participant information." },
-      { title: "Review fit", copy: "APGP reviews the vacancy context and discusses how active matching may support your occupancy goals." },
-      { title: "Assess suitability", copy: "Your team retains responsibility for participant suitability, service fit, and final agreements." },
-      { title: "Move forward responsibly", copy: "Progress suitable opportunities under APGP’s current written provider terms." },
+      { title: "Register free", copy: "Create an APGP provider account and access the live participant-enquiry feed and provider dashboard." },
+      { title: "Share vacancies or browse the live feed", copy: "Describe available properties or select the enquiries that best fit your available accommodation." },
+      { title: "APGP coordinates full intake", copy: "APGP manages qualification, documentation, plan verification, property inspections and intake handover." },
+      { title: "APGP supports the move-in", copy: "The team stays engaged through onboarding, tenancy setup and the first weeks of placement." },
+      { title: "Pay only after move-in", copy: "The success-based fee is triggered only after completed intake and physical move-in." },
     ],
-    outcomes: ["Clearer vacancy presentation", "More structured referral follow-up", "Provider-paid commercial alignment", "Participant choice protected"],
+    outcomes: ["Access to live participant enquiries", "Full intake coordination", "Ongoing matching and vacancy support", "$0 upfront—pay only after move-in"],
     responsibleUse:
-      "APGP supports referral and matching activity. Providers remain responsible for suitability assessment, service agreements, safeguarding, consent, and compliance with their obligations.",
-    externalUrl: "https://www.apgpaccommodation.com.au/",
+      "APGP is a referral partnership, not an AI product. Providers remain responsible for service suitability, agreements, safeguarding, consent and compliance with their own obligations.",
+    externalUrl: "https://www.apgpaccommodation.com.au/pathways",
+    registrationUrl: "https://www.apgpaccommodation.com.au/provider/register",
   },
   incidentiq: {
     key: "incidentiq",

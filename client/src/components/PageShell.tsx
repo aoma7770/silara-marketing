@@ -3,13 +3,14 @@ import type { PropsWithChildren } from "react";
 import SiteHeader from "./SiteHeader";
 import SiteFooter from "./SiteFooter";
 
-export default function PageShell({ children }: PropsWithChildren) {
+export type ExternalPageCta = { href: string; label: string; heading?: string; copy?: string };
+
+export default function PageShell({ children, externalCta }: PropsWithChildren<{ externalCta?: ExternalPageCta }>) {
   return (
     <div className="site-shell">
-      <SiteHeader />
+      <SiteHeader externalCta={externalCta} />
       <main id="main-content">{children}</main>
-      <SiteFooter />
+      <SiteFooter externalCta={externalCta} />
     </div>
   );
 }
-

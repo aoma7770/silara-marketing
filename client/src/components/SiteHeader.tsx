@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "wouter";
 import BrandLogo from "./BrandLogo";
 import { productList } from "@/data/site";
+import type { ExternalPageCta } from "./PageShell";
 
-export default function SiteHeader() {
+export default function SiteHeader({ externalCta }: { externalCta?: ExternalPageCta }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -65,7 +66,7 @@ export default function SiteHeader() {
 
           <div className="site-header__actions">
             <a className="header-email" href="mailto:support@silaramarketing.com.au">Email us</a>
-            <Link className="button button--gold button--small" href="/book-demo">Schedule a call</Link>
+            {externalCta ? <a className="button button--gold button--small" href={externalCta.href}>See how it works</a> : <Link className="button button--gold button--small" href="/book-demo">Schedule a call</Link>}
             <button className="menu-toggle" type="button" onClick={() => setMenuOpen((open) => !open)} aria-expanded={menuOpen} aria-label="Toggle navigation">
               {menuOpen ? <X /> : <Menu />}
             </button>
@@ -81,7 +82,7 @@ export default function SiteHeader() {
               <Link href="/about">About Silara</Link>
               <Link href="/resources">Resources</Link>
               <Link href="/contact">Contact</Link>
-              <Link className="button button--gold" href="/book-demo">Schedule a call</Link>
+              {externalCta ? <a className="button button--gold" href={externalCta.href}>See how it works</a> : <Link className="button button--gold" href="/book-demo">Schedule a call</Link>}
             </div>
           </nav>
         )}
@@ -89,4 +90,3 @@ export default function SiteHeader() {
     </>
   );
 }
-

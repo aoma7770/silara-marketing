@@ -105,4 +105,11 @@
 - [x] Preserve the image-led header while adding layered, section-specific background imagery throughout the homepage and primary conversion pages.
 - [x] Add restrained scroll-responsive depth, image reveal and content-surface interactions with reduced-motion safeguards.
 - [x] Verify desktop and mobile hierarchy, contrast, conversion controls and image loading across the updated pages.
-- [ ] Save a checkpoint for the refined interactive visual system.
+- [x] Save a checkpoint for the refined interactive visual system.
+
+## APGP content correction
+
+- [x] Review the live APGP website and record verified referral-pathway information, positioning and conversion language.
+- [x] Audit the existing APGP route for AI references, booking calls-to-action and unverified product claims.
+- [x] Replace the APGP product narrative, calls-to-action and final handoff with a direct “See how it works” link to the APGP website.
+- [x] Test the external APGP handoff, desktop and mobile APGP presentation, then save a checkpoint.

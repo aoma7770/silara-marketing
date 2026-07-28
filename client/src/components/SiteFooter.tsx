@@ -3,17 +3,18 @@ import { ArrowUpRight, Linkedin } from "lucide-react";
 import { Link } from "wouter";
 import BrandLogo from "./BrandLogo";
 import { productList, supportEmail } from "@/data/site";
+import type { ExternalPageCta } from "./PageShell";
 
-export default function SiteFooter() {
+export default function SiteFooter({ externalCta }: { externalCta?: ExternalPageCta }) {
   return (
     <footer className="site-footer">
       <div className="container footer-cta">
         <div>
           <span className="eyebrow eyebrow--light">A practical next step</span>
-          <h2>See the next decision more clearly.</h2>
-          <p>Bring one workflow to the conversation and we’ll help you identify the most useful Silara pathway.</p>
+          <h2>{externalCta?.heading ?? "See the next decision more clearly."}</h2>
+          <p>{externalCta?.copy ?? "Bring one workflow to the conversation and we’ll help you identify the most useful Silara pathway."}</p>
         </div>
-        <Link href="/book-demo" className="button button--gold">Schedule a call <ArrowUpRight size={17} /></Link>
+        {externalCta ? <a href={externalCta.href} className="button button--gold">{externalCta.label} <ArrowUpRight size={17} /></a> : <Link href="/book-demo" className="button button--gold">Schedule a call <ArrowUpRight size={17} /></Link>}
       </div>
 
       <div className="container footer-main">

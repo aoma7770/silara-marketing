@@ -10,7 +10,7 @@ import { productList, type Product } from "@/data/site";
 const portfolioImage = "/manus-storage/silara-portfolio-interface_0ed7b249.jpg";
 
 const operatingNotes: Record<Product["key"], { signal: string; boundary: string; measure: string }> = {
-  apgp: { signal: "Vacancy context and follow-up readiness", boundary: "Suitability and agreement decisions stay with the provider.", measure: "Movement toward suitable opportunity" },
+  apgp: { signal: "Vacancies, participant enquiries and referral-pathway progress", boundary: "APGP is a referral partnership; providers retain service suitability and agreement decisions.", measure: "Stable occupancy through supported move-in" },
   incidentiq: { signal: "Deadlines, evidence gaps and escalation ownership", boundary: "Authorised people retain interpretation, action and approval.", measure: "Continuity of controlled action" },
   noteguard: { signal: "Configurable documentation-quality patterns", boundary: "Records are never silently changed; final approval stays human.", measure: "Earlier, more useful coaching" },
   credsvault: { signal: "Credential exceptions and expiring evidence", boundary: "Verification and allocation approvals remain provider responsibilities.", measure: "Readiness visibility before allocation" },
@@ -36,19 +36,19 @@ export default function Solutions() {
       <section className="section portfolio-operating section--scene scene--mist">
         <SectionScene src="/manus-storage/silara-ai-human-oversight-workflow_fe5191c5.jpg" position="78% center" />
         <div className="container">
-          <div className="portfolio-operating__heading"><div className="section-rail"><span className="chapter-number">01</span><span>Operating layer</span></div><div className="section-heading"><span className="eyebrow">Explore the workflow</span><h2>Five distinct systems. One accountable operating philosophy.</h2><p>Each product is designed to bring the next responsible action into view. AI may assist with pattern recognition and preparation; authorised people remain accountable for decisions.</p></div></div>
+          <div className="portfolio-operating__heading"><div className="section-rail"><span className="chapter-number">01</span><span>Operating layer</span></div><div className="section-heading"><span className="eyebrow">Explore the workflow</span><h2>Five distinct systems. One accountable operating philosophy.</h2><p>Each product is designed to bring the next responsible action into view. Where appropriate, AI may assist with preparation; authorised people remain accountable for decisions. APGP is a results-based referral partnership, not an AI product.</p></div></div>
           <div className="portfolio-operating__body">
             <div className="portfolio-operating__nav" role="tablist" aria-label="Silara products">
               {productList.map((product) => <button key={product.key} role="tab" aria-selected={activeKey === product.key} className={activeKey === product.key ? "portfolio-operating__tab portfolio-operating__tab--active" : "portfolio-operating__tab"} style={{ "--product": product.accent } as CSSProperties} onClick={() => setActiveKey(product.key)}><span>{product.index}</span><strong>{product.shortName}</strong><small>{product.category}</small></button>)}
             </div>
             <div className="portfolio-operating__stage" style={{ "--product": activeProduct.accent, "--product-tint": activeProduct.tint } as CSSProperties} role="tabpanel">
-              <div className="portfolio-operating__stage-mark"><BrainCircuit size={23} /><span>Assisted signal</span></div>
+              <div className="portfolio-operating__stage-mark">{activeProduct.key === "apgp" ? <Layers3 size={23} /> : <BrainCircuit size={23} />}<span>{activeProduct.key === "apgp" ? "Referral partnership" : "Assisted signal"}</span></div>
               <span className="eyebrow">{activeProduct.category} · {activeProduct.status}</span>
               <h3>{activeProduct.name}</h3>
               <p>{activeProduct.summary}</p>
               <div className="portfolio-operating__signal"><span>Designed to surface</span><strong>{note.signal}</strong></div>
               <div className="portfolio-operating__ledger"><div><span>Human boundary</span><strong>{note.boundary}</strong></div><div><span>Working toward</span><strong>{note.measure}</strong></div></div>
-              <Link href={activeProduct.slug} className="button button--product">Explore {activeProduct.shortName} <ArrowUpRight size={17} /></Link>
+              {activeProduct.key === "apgp" && activeProduct.externalUrl ? <a href={activeProduct.externalUrl} className="button button--product">See how it works <ArrowUpRight size={17} /></a> : <Link href={activeProduct.slug} className="button button--product">Explore {activeProduct.shortName} <ArrowUpRight size={17} /></Link>}
             </div>
           </div>
         </div>
