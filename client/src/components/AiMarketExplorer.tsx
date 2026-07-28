@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { ArrowRight, BrainCircuit, Check, Network, ShieldCheck } from "lucide-react";
 import { Link } from "wouter";
+import SectionScene from "@/components/SectionScene";
 
 type MarketKey = "ndis" | "aged" | "allied" | "sil";
 
@@ -59,7 +60,8 @@ export default function AiMarketExplorer() {
   const story = marketStories[active];
 
   return (
-    <section className="section market-explorer" aria-labelledby="market-explorer-title">
+    <section className="section market-explorer section--scene scene--mist" aria-labelledby="market-explorer-title">
+      <SectionScene src="/manus-storage/silara-allied-health-ai-documentation_282f7040.jpg" position="78% center" />
       <div className="container">
         <div className="market-explorer__heading">
           <div className="section-rail"><span className="chapter-number">04</span><span>Who we support</span></div>

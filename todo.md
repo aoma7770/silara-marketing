@@ -98,3 +98,11 @@
 - [ ] Preserve accurate claims: AI assists with organisation, drafting, detection and prioritisation; authorised people retain judgement, approvals and regulatory responsibility.
 - [ ] Validate desktop and mobile visual quality, motion preferences, contrast, accessibility, routes and lead conversion paths.
 - [ ] Save a redesigned website checkpoint with the visual and AI-storytelling overhaul.
+
+## Image-led scroll refinement
+
+- [x] Audit the completed primary-page sections for the strongest distinct faded background-image treatment and safe text contrast.
+- [x] Preserve the image-led header while adding layered, section-specific background imagery throughout the homepage and primary conversion pages.
+- [x] Add restrained scroll-responsive depth, image reveal and content-surface interactions with reduced-motion safeguards.
+- [x] Verify desktop and mobile hierarchy, contrast, conversion controls and image loading across the updated pages.
+- [ ] Save a checkpoint for the refined interactive visual system.

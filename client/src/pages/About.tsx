@@ -3,6 +3,7 @@ import { ArrowRight, BrainCircuit, Eye, Flag, HeartHandshake, Scale, ShieldCheck
 import { Link } from "wouter";
 import PageShell from "@/components/PageShell";
 import ScrollReveal from "@/components/ScrollReveal";
+import SectionScene from "@/components/SectionScene";
 
 const aboutImage = "/manus-storage/silara-about-local-providers_ab2d81de.jpg";
 const oversightImage = "/manus-storage/silara-ai-human-oversight-workflow_fe5191c5.jpg";
@@ -22,7 +23,8 @@ export default function About() {
         </div>
       </section>
 
-      <section className="section about-story">
+      <section className="section about-story section--scene scene--light">
+        <SectionScene src="/manus-storage/silara-ndis-ai-pathways_b39c61cb.jpg" position="78% center" />
         <div className="container editorial-grid">
           <div className="section-rail"><span className="chapter-number">01</span><span>Our story</span></div>
           <div className="about-story__copy">
@@ -37,7 +39,8 @@ export default function About() {
         </div>
       </section>
 
-      <section className="section mission-vision">
+      <section className="section mission-vision section--scene scene--mist">
+        <SectionScene src="/manus-storage/silara-aged-care-ai-assurance_04c2f1eb.jpg" position="78% center" />
         <div className="container mission-vision__grid">
           <ScrollReveal className="mission-card"><Flag /><span>Mission</span><h2>Help Australian care providers grow responsibly.</h2><p>We replace fragmented referral, compliance, documentation, workforce, and reputation work with practical systems that strengthen teams and protect the quality of care.</p></ScrollReveal>
           <ScrollReveal className="vision-card" delay={0.08}><Eye /><span>Vision</span><h2>Become Australia’s most trusted portfolio of care-provider growth and compliance products.</h2><p>We aim to be known for helping local NDIS, aged-care, disability-services, and allied-health organisations operate with greater confidence, clarity, and sustainable success.</p></ScrollReveal>
@@ -51,7 +54,8 @@ export default function About() {
         </div>
       </section>
 
-      <section className="section values-section">
+      <section className="section values-section section--scene scene--light">
+        <SectionScene src="/manus-storage/silara-allied-health-ai-documentation_282f7040.jpg" position="78% center" />
         <div className="container">
           <div className="values-heading"><div className="section-rail"><span className="chapter-number">02</span><span>How we work</span></div><div className="section-heading"><span className="eyebrow">Principles before promises</span><h2>What we believe should never change.</h2></div></div>
           <div className="values-grid">
@@ -68,7 +72,8 @@ export default function About() {
         </div>
       </section>
 
-      <section className="section strategic-principles">
+      <section className="section strategic-principles section--scene scene--deep">
+        <SectionScene src="/manus-storage/silara-sil-sda-ai-matching_d7cd46ff.jpg" position="76% center" tone="deep" />
         <div className="container strategic-principles__grid">
           <div className="section-heading section-heading--light"><span className="eyebrow eyebrow--light">Our operating position</span><h2>Supportive by purpose. Disciplined by design.</h2><p>Silara combines the responsiveness of a local partner with the product discipline expected from a serious technology company.</p></div>
           <div className="strategy-list">
@@ -82,7 +87,8 @@ export default function About() {
         </div>
       </section>
 
-      <section className="section final-cta final-cta--light">
+      <section className="section final-cta final-cta--light section--scene scene--mist">
+        <SectionScene src="/manus-storage/silara-ai-human-oversight-workflow_fe5191c5.jpg" position="72% center" />
         <div className="container final-cta__inner"><span className="eyebrow">A partner for the next practical step</span><h2>Let’s support your organisation to succeed.</h2><p>Tell us what is creating pressure today, and we’ll help you identify the most useful conversation to have next.</p><Link href="/book-demo" className="button button--gold">Schedule a discovery call <ArrowRight size={17} /></Link></div>
       </section>
     </PageShell>

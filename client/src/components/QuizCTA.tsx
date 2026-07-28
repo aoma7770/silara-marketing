@@ -2,6 +2,7 @@
 import { useState, type CSSProperties } from "react";
 import { ArrowRight, BrainCircuit, Clock3, LockKeyhole, ShieldCheck } from "lucide-react";
 import { Link } from "wouter";
+import SectionScene from "@/components/SectionScene";
 import type { Product } from "@/data/site";
 
 const productPrompt: Record<Product["key"], string> = {
@@ -10,6 +11,14 @@ const productPrompt: Record<Product["key"], string> = {
   noteguard: "Where does note quality, coaching, or approval consistency create the most pressure?",
   credsvault: "Where is workforce readiness hardest to confirm or follow up?",
   providerpulse: "Where does feedback ownership or service recovery lose momentum?",
+};
+
+const quizScenes: Record<Product["key"], string> = {
+  apgp: "/manus-storage/silara-sil-sda-ai-matching_d7cd46ff.jpg",
+  incidentiq: "/manus-storage/silara-ai-human-oversight-workflow_fe5191c5.jpg",
+  noteguard: "/manus-storage/silara-allied-health-ai-documentation_282f7040.jpg",
+  credsvault: "/manus-storage/silara-aged-care-ai-assurance_04c2f1eb.jpg",
+  providerpulse: "/manus-storage/silara-ndis-ai-pathways_b39c61cb.jpg",
 };
 
 export default function QuizCTA({ product }: { product: Product }) {
@@ -21,7 +30,8 @@ export default function QuizCTA({ product }: { product: Product }) {
   ];
 
   return (
-    <section className="quiz-section quiz-section--ai" id="product-fit" style={{ "--product": product.accent, "--product-tint": product.tint } as CSSProperties}>
+    <section className="quiz-section quiz-section--ai section--scene scene--mist" id="product-fit" style={{ "--product": product.accent, "--product-tint": product.tint } as CSSProperties}>
+      <SectionScene src={quizScenes[product.key]} position="78% center" />
       <div className="container quiz-layout">
         <div className="quiz-copy">
           <span className="eyebrow">Product fit check</span>

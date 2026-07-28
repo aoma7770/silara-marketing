@@ -4,6 +4,7 @@ import { ArrowRight, ArrowUpRight, BrainCircuit, CheckCircle2, Layers3 } from "l
 import { Link } from "wouter";
 import PageShell from "@/components/PageShell";
 import ScrollReveal from "@/components/ScrollReveal";
+import SectionScene from "@/components/SectionScene";
 import { productList, type Product } from "@/data/site";
 
 const portfolioImage = "/manus-storage/silara-portfolio-interface_0ed7b249.jpg";
@@ -32,7 +33,8 @@ export default function Solutions() {
         </div>
       </section>
 
-      <section className="section portfolio-operating">
+      <section className="section portfolio-operating section--scene scene--mist">
+        <SectionScene src="/manus-storage/silara-ai-human-oversight-workflow_fe5191c5.jpg" position="78% center" />
         <div className="container">
           <div className="portfolio-operating__heading"><div className="section-rail"><span className="chapter-number">01</span><span>Operating layer</span></div><div className="section-heading"><span className="eyebrow">Explore the workflow</span><h2>Five distinct systems. One accountable operating philosophy.</h2><p>Each product is designed to bring the next responsible action into view. AI may assist with pattern recognition and preparation; authorised people remain accountable for decisions.</p></div></div>
           <div className="portfolio-operating__body">
@@ -52,14 +54,15 @@ export default function Solutions() {
         </div>
       </section>
 
-      <section className="section solutions-ledger-section">
+      <section className="section solutions-ledger-section section--scene scene--light">
+        <SectionScene src="/manus-storage/silara-ndis-ai-pathways_b39c61cb.jpg" position="78% center" />
         <div className="container solutions-ledger-heading"><div className="section-rail"><span className="chapter-number">02</span><span>Portfolio ledger</span></div><div className="section-heading"><span className="eyebrow">A product is not a promise</span><h2>Each system begins with the operational problem it must help a team own.</h2></div></div>
         <div className="container solutions-list">
           {productList.map((product, index) => <ScrollReveal key={product.key} delay={index * 0.035}><article style={{ "--product": product.accent, "--product-tint": product.tint } as CSSProperties}><div className="solutions-list__index">{product.index}</div><div><span className="eyebrow">{product.category} / {product.status}</span><h2>{product.name}</h2><p>{product.headline}</p><small>{product.audience}</small></div><Link href={product.slug} className="button button--product">Explore {product.shortName} <ArrowUpRight size={17} /></Link></article></ScrollReveal>)}
         </div>
       </section>
 
-      <section className="section portfolio-call portfolio-call--ai"><div className="container"><div><span className="eyebrow eyebrow--light">Not sure where to begin?</span><h2>Start with the workflow—not the product list.</h2><p>We will help you isolate where growth, assurance, documentation, workforce readiness, or feedback handling is creating the most drag.</p><div className="portfolio-call__proof"><CheckCircle2 size={16} /><span>Scoped conversations. No public pricing. No automated recommendations.</span></div></div><Link href="/book-demo" className="button button--gold">Schedule a call <ArrowRight size={17} /></Link></div></section>
+      <section className="section portfolio-call portfolio-call--ai section--scene scene--deep"><SectionScene src="/manus-storage/silara-aged-care-ai-assurance_04c2f1eb.jpg" position="74% center" tone="deep" /><div className="container"><div><span className="eyebrow eyebrow--light">Not sure where to begin?</span><h2>Start with the workflow—not the product list.</h2><p>We will help you isolate where growth, assurance, documentation, workforce readiness, or feedback handling is creating the most drag.</p><div className="portfolio-call__proof"><CheckCircle2 size={16} /><span>Scoped conversations. No public pricing. No automated recommendations.</span></div></div><Link href="/book-demo" className="button button--gold">Schedule a call <ArrowRight size={17} /></Link></div></section>
     </PageShell>
   );
 }

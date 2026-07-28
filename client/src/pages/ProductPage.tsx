@@ -5,6 +5,7 @@ import type { CSSProperties } from "react";
 import PageShell from "@/components/PageShell";
 import QuizCTA from "@/components/QuizCTA";
 import ScrollReveal from "@/components/ScrollReveal";
+import SectionScene from "@/components/SectionScene";
 import type { Product } from "@/data/site";
 
 const apgpImage = "/manus-storage/silara-apgp-supported-living_4bb84a46.jpg";
@@ -51,6 +52,14 @@ const aiProof: Record<Product["key"], { eyebrow: string; title: string; copy: st
     alt: "Australian care provider team reviewing connected service pathways",
     signals: ["Theme visibility", "Owned response routes", "Human-approved communication"],
   },
+};
+
+const ambientScenes: Record<Product["key"], string> = {
+  apgp: "/manus-storage/silara-ndis-ai-pathways_b39c61cb.jpg",
+  incidentiq: "/manus-storage/silara-aged-care-ai-assurance_04c2f1eb.jpg",
+  noteguard: "/manus-storage/silara-sil-sda-ai-matching_d7cd46ff.jpg",
+  credsvault: "/manus-storage/silara-allied-health-ai-documentation_282f7040.jpg",
+  providerpulse: "/manus-storage/silara-ai-human-oversight-workflow_fe5191c5.jpg",
 };
 
 const narratives: Record<string, { pressure: string; solution: string; process: string; outcome: string }> = {
@@ -107,6 +116,7 @@ export default function ProductPage({ product }: { product: Product }) {
   const image = product.key === "apgp" ? apgpImage : productImage;
   const narrative = narratives[product.key];
   const proof = aiProof[product.key];
+  const ambientScene = ambientScenes[product.key];
 
   return (
     <PageShell>
@@ -131,7 +141,8 @@ export default function ProductPage({ product }: { product: Product }) {
           </div>
         </section>
 
-        <section className="section product-problem">
+        <section className="section product-problem section--scene scene--light">
+          <SectionScene src={ambientScene} position="78% center" />
           <div className="container editorial-grid">
             <div className="section-rail"><span className="chapter-number">01</span><span>The pressure</span></div>
             <div>
@@ -146,7 +157,8 @@ export default function ProductPage({ product }: { product: Product }) {
           </div>
         </section>
 
-        <section className="section product-features">
+        <section className="section product-features section--scene scene--mist">
+          <SectionScene src={productImage} position="78% center" />
           <div className="container">
             <div className="product-section-heading">
               <div className="section-rail"><span className="chapter-number">02</span><span>The solution</span></div>
@@ -165,7 +177,8 @@ export default function ProductPage({ product }: { product: Product }) {
           </div>
         </section>
 
-        <section className="section product-process" id="how-it-works">
+        <section className="section product-process section--scene scene--deep" id="how-it-works">
+          <SectionScene src={proof.image} position="76% center" tone="deep" />
           <div className="container editorial-grid">
             <div className="section-rail section-rail--light"><span className="chapter-number">03</span><span>How it works</span></div>
             <div>
@@ -190,7 +203,8 @@ export default function ProductPage({ product }: { product: Product }) {
           </div>
         </section>
 
-        <section className="section product-outcomes">
+        <section className="section product-outcomes section--scene scene--light">
+          <SectionScene src={image} position="78% center" />
           <div className="container product-outcomes__grid">
             <div className="section-heading"><span className="eyebrow">What your team is working towards</span><h2>{narrative.outcome}</h2></div>
             <div className="outcome-list">

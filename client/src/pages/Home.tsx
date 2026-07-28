@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import PageShell from "@/components/PageShell";
 import ScrollReveal from "@/components/ScrollReveal";
 import AiMarketExplorer from "@/components/AiMarketExplorer";
+import SectionScene from "@/components/SectionScene";
 import { productList } from "@/data/site";
 
 const heroImage = "/manus-storage/silara-ai-care-operations-hero_706a1baf.jpg";
@@ -44,7 +45,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section section--pearl problem-section">
+      <section className="section section--pearl problem-section section--scene scene--light">
+        <SectionScene src="/manus-storage/silara-ndis-ai-pathways_b39c61cb.jpg" position="76% center" />
         <div className="container editorial-grid">
           <ScrollReveal className="section-rail"><span className="chapter-number">01</span><span>The work behind the work</span></ScrollReveal>
           <div>
@@ -69,7 +71,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section ai-protocol-section">
+      <section className="section ai-protocol-section section--scene scene--mist">
+        <SectionScene src="/manus-storage/silara-aged-care-ai-assurance_04c2f1eb.jpg" position="78% center" />
         <div className="container ai-protocol">
           <div className="ai-protocol__media"><img src={aiWorkflowImage} alt="Responsible AI workflow moving from care-provider signals to human approval" /><span>Signal → organised context → human approval</span></div>
           <div className="ai-protocol__copy">
@@ -88,7 +91,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section portfolio-section">
+      <section className="section portfolio-section section--scene scene--light">
+        <SectionScene src="/manus-storage/silara-allied-health-ai-documentation_282f7040.jpg" position="78% center" />
         <div className="container">
           <div className="portfolio-heading">
             <div className="section-rail"><span className="chapter-number">02</span><span>The portfolio</span></div>
@@ -111,7 +115,8 @@ export default function Home() {
 
       <AiMarketExplorer />
 
-      <section className="section dark-proof dark-proof--ai">
+      <section className="section dark-proof dark-proof--ai section--scene scene--deep">
+        <SectionScene src={aiWorkflowImage} position="76% center" tone="deep" />
         <div className="container editorial-grid">
           <div className="section-rail section-rail--light"><span className="chapter-number">05</span><span>Our difference</span></div>
           <div>
@@ -128,7 +133,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section metrics-section">
+      <section className="section metrics-section section--scene scene--mist">
+        <SectionScene src="/manus-storage/silara-sil-sda-ai-matching_d7cd46ff.jpg" position="78% center" />
         <div className="container metrics-grid">
           <div className="section-heading"><span className="eyebrow">Evidence before promises</span><h2>We measure the work that should improve.</h2><p>Until verified customer outcomes are available, Silara’s proof starts with a transparent measurement framework—not fabricated testimonials.</p></div>
           <div className="metric-ledger">
@@ -143,7 +149,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section final-cta final-cta--ai"><div className="container final-cta__inner"><Sparkles /><span className="eyebrow">Ready when you are</span><h2>Let’s make the next operational step clearer.</h2><p>Schedule a practical conversation about the pressure your team is facing. No public pricing, no generic pitch—just a focused discussion about fit.</p><Link href="/book-demo" className="button button--gold">Schedule a discovery call <ArrowRight size={17} /></Link></div></section>
+      <section className="section final-cta final-cta--ai section--scene scene--light"><SectionScene src="/manus-storage/silara-ai-care-operations-hero_706a1baf.jpg" position="72% center" /><div className="container final-cta__inner"><Sparkles /><span className="eyebrow">Ready when you are</span><h2>Let’s make the next operational step clearer.</h2><p>Schedule a practical conversation about the pressure your team is facing. No public pricing, no generic pitch—just a focused discussion about fit.</p><Link href="/book-demo" className="button button--gold">Schedule a discovery call <ArrowRight size={17} /></Link></div></section>
     </PageShell>
   );
 }

@@ -3,6 +3,7 @@ import { ArrowRight, BrainCircuit, Check, LockKeyhole, Mail, ShieldCheck } from 
 import { useMemo } from "react";
 import { Link, useLocation } from "wouter";
 import PageShell from "@/components/PageShell";
+import SectionScene from "@/components/SectionScene";
 import { productList, supportEmail } from "@/data/site";
 
 const discoveryImage = "/manus-storage/silara-ai-care-operations-hero_706a1baf.jpg";
@@ -16,7 +17,7 @@ export default function LeadPage({ contactOnly = false }: { contactOnly?: boolea
   return (
     <PageShell>
       <section className="lead-page lead-page--ai">
-        <div className="lead-page__visual" aria-hidden="true"><img src={discoveryImage} alt="" /><div /></div>
+        <SectionScene src={discoveryImage} tone="deep" position="62% center" className="lead-page__visual" />
         <div className="container lead-page__grid">
           <div className="lead-page__copy">
             <span className="eyebrow eyebrow--light">{contactOnly ? "Contact Silara" : "Schedule a discovery call"}</span>

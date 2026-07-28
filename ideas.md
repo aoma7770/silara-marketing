@@ -129,3 +129,7 @@ Instrument Serif is reserved for hero headlines, major editorial statements, key
 The supplied-logo system supersedes the former Silara Gate and Gold identity. Use Deep Navy `#062A63`, Silara Depth `#031B44`, Signal Teal `#159CB1`, supporting Aqua `#20B1C2`, Soft Canvas `#F7FAFC`, and Mist `#EAF3F6`. No broad gold surfaces or gold primary CTAs remain in the refreshed experience.
 
 Every dedicated product page includes a product-specific operating diagram or evidence ledger. APGP visualises vacancy-to-suitable-opportunity movement; IncidentIQ visualises deadline and evidence continuity; NoteGuard visualises documentation review; CredsVault visualises workforce-readiness exceptions; ProviderPulse visualises an owned service-recovery loop.
+
+The Silara Network and signal line must behave as evidence-pathway graphics: they should join headings, metrics, workflow states, proof ledgers, and CTA stages without sitting over important headline text as general ornament.
+
+Ambient care-context photography is a controlled, low-opacity atmospheric layer rather than a default visual field. Soft Canvas and Mist remain crisp institutional reading surfaces, while protected content surfaces and stronger rules carry the practical operating-system hierarchy.

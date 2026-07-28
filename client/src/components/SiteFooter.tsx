@@ -10,8 +10,8 @@ export default function SiteFooter() {
       <div className="container footer-cta">
         <div>
           <span className="eyebrow eyebrow--light">A practical next step</span>
-          <h2>Tell us where the pressure is.</h2>
-          <p>We’ll help you identify which Silara pathway best fits your organisation.</p>
+          <h2>See the next decision more clearly.</h2>
+          <p>Bring one workflow to the conversation and we’ll help you identify the most useful Silara pathway.</p>
         </div>
         <Link href="/book-demo" className="button button--gold">Schedule a call <ArrowUpRight size={17} /></Link>
       </div>

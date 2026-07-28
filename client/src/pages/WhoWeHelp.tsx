@@ -3,6 +3,7 @@ import { ArrowRight, BrainCircuit, ChevronDown, HeartPulse, House, ShieldCheck, 
 import { Link } from "wouter";
 import PageShell from "@/components/PageShell";
 import ScrollReveal from "@/components/ScrollReveal";
+import SectionScene from "@/components/SectionScene";
 
 const sectors = [
   {
@@ -54,7 +55,8 @@ const sectors = [
 export default function WhoWeHelp() {
   return (
     <PageShell>
-      <section className="inner-hero audience-hero">
+      <section className="inner-hero audience-hero section--scene scene--deep">
+        <SectionScene src="/manus-storage/silara-ndis-ai-pathways_b39c61cb.jpg" position="72% center" tone="deep" />
         <div className="container audience-hero__grid">
           <div>
             <span className="eyebrow eyebrow--light">Who we help</span>
@@ -65,7 +67,8 @@ export default function WhoWeHelp() {
         </div>
       </section>
 
-      <section className="section audience-ledger-section">
+      <section className="section audience-ledger-section section--scene scene--mist">
+        <SectionScene src="/manus-storage/silara-sil-sda-ai-matching_d7cd46ff.jpg" position="78% center" />
         <div className="container">
           <div className="audience-ledger-heading">
             <div className="section-rail"><span className="chapter-number">01</span><span>Care contexts</span></div>
@@ -97,7 +100,8 @@ export default function WhoWeHelp() {
         </div>
       </section>
 
-      <section className="section final-cta final-cta--ai">
+      <section className="section final-cta final-cta--ai section--scene scene--light">
+        <SectionScene src="/manus-storage/silara-allied-health-ai-documentation_282f7040.jpg" position="72% center" />
         <div className="container final-cta__inner"><span className="eyebrow">Local care businesses matter</span><h2>Your systems should help your team succeed—not hold them back.</h2><p>Tell us what your organisation is trying to improve, and we will help you find the next practical conversation.</p><Link href="/book-demo" className="button button--gold">Schedule a discovery call <ArrowRight size={17} /></Link></div>
       </section>
     </PageShell>
